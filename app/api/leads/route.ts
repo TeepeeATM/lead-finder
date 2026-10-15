@@ -1,56 +1,128 @@
 import { NextRequest, NextResponse } from "next/server";
+
 export const runtime = "nodejs";
-const areas: Record<string,[number,number]> = {
-  "Memphis, TN":[35.1495,-90.0490],
-  "Southaven, MS":[34.98898,-90.01259],
-  "Olive Branch, MS":[34.96176,-89.82953],
-  "Horn Lake, MS":[34.95537,-90.03481],
-  "Tunica, MS":[34.68455,-90.38288],
-  "North Mississippi":[34.95537,-90.03481]
+export const dynamic = "force-dynamic";
+
+type Tags = Record<string, string>;
+type Element = { type: "node" | "way" | "relation"; id: number; tags?: Tags };
+type Lead = {
+  id: string; name: string; type: string; place: string; website: string;
+  phone: string | null; email: string | null; score: number; source: string;
+  why: string; stage: string; next: string;
 };
-const tags:Record<string,string>={
-  "Barbershops":'["shop"="hairdresser"]',
-  "Beauty salons":'["shop"="beauty"]',
-  "Landscaping":'["craft"="gardener"]',
-  "Remodeling":'["craft"~"carpenter|builder|painter|roofer"]'
+
+const areas: Record<string, [number, number, number]> = {
+  "Memphis, TN": [35.1495, -90.049, 17000],
+  "Southaven, MS": [34.98898, -90.01259, 14000],
+  "Olive Branch, MS": [34.96176, -89.82953, 14000],
+  "Horn Lake, MS": [34.95537, -90.03481, 14000],
+  "Tunica, MS": [34.68455, -90.38288, 22000],
+  "North Mississippi": [34.95537, -90.03481, 40000]
 };
-type Element={type:string;id:number;tags?:Record<string,string>};
-const clean=(x?:string)=>x?.trim()||"";
-export async function GET(req:NextRequest){
-  const type=req.nextUrl.searchParams.get("type")||"Barbershops";
-  const area=req.nextUrl.searchParams.get("area")||"North Mississippi";
-  const limit=Math.min(50,Math.max(1,Number(req.nextUrl.searchParams.get("limit")||10)||10));
-  if(!areas[area]||!tags[type])return NextResponse.json({error:"Unsupported area or business type"},{status:400});
-  const [lat,lon]=areas[area];
-  const radius=area==="North Mississippi"?45000:18000;
-  const query=`[out:json][timeout:20];(nwr(around:${radius},${lat},${lon})${tags[type]};);out tags 180;`;
-  try{
-    const controller=new AbortController();
-    const timeout=setTimeout(()=>controller.abort(),24000);
-    let res:Response;
-    try {res=await fetch("https://overpass.kumi.systems/api/interpreter",{method:"POST",body:new URLSearchParams({data:query}),headers:{"Content-Type":"application/x-www-form-urlencoded"},signal:controller.signal,cache:"no-store"});}
-    finally{clearTimeout(timeout);}
-    if(!res.ok)throw new Error("Discovery provider temporarily unavailable");
-    const data=await res.json() as {elements?:Element[]};
-    const seen=new Set<string>();
-    const leads=(data.elements||[]).flatMap(el=>{
-      const t=el.tags||{};
-      const name=clean(t.name);
-      const website=clean(t.website||t["contact:website"]);
-      const phone=clean(t.phone||t["contact:phone"]);
-      const email=clean(t.email||t["contact:email"]);
-      if(!name||!website||(!phone&&!email))return [];
-      let url:URL;
-      try{url=new URL(/^https?:\/\//i.test(website)?website:"https://"+website);if(!["http:","https:"].includes(url.protocol))return [];}catch{return [];}
-      const key=(url.hostname.replace(/^www\./,"")+"|"+name.toLowerCase()).replace(/\s+/g,"");
-      if(seen.has(key))return [];seen.add(key);
-      const city=clean(t["addr:city"])||area;
-      const contactCount=Number(!!phone)+Number(!!email);
-      const score=50+contactCount*10+Number(!!t["addr:street"])*10+Number(!!t["opening_hours"])*5;
-      return [{id:`${el.type}/${el.id}`,name,type,place:city,website:url.href,phone:phone||null,email:email||null,score,scoreLabel:"Record completeness",source:`https://www.openstreetmap.org/${el.type}/${el.id}`,why:"Public business record includes a website and contact details. Website quality has not been audited.",stage:"Researching",next:"Verify website"}];
-    }).sort((a,b)=>b.score-a.score).slice(0,limit);
-    return NextResponse.json({leads,found:leads.length,source:"OpenStreetMap contributors via Overpass API",notice:"Directory data can be outdated. Verify website and contact details before outreach. Scores measure record completeness, not buying intent."});
-  }catch{
-    return NextResponse.json({error:"Live discovery is temporarily unavailable. Please try again later; no sample leads were substituted."},{status:503});
+const categories: Record<string, string[]> = {
+  "Barbershops": ['["shop"="hairdresser"]', '["shop"="barber"]'],
+  "Beauty salons": ['["shop"="beauty"]', '["beauty"="salon"]'],
+  "Landscaping": ['["craft"="gardener"]', '["craft"="landscaper"]'],
+  "Remodeling": ['["craft"~"carpenter|builder|painter|roofer"]']
+};
+const providers = [
+  "https://overpass-api.de/api/interpreter",
+  "https://overpass.kumi.systems/api/interpreter",
+  "https://overpass.nchc.org.tw/api/interpreter"
+];
+const str = (value?: string) => (value || "").trim();
+
+function normalizeWebsite(value: string): string | null {
+  if (!value) return null;
+  const first = value.split(";")[0].trim();
+  try {
+    const url = new URL(/^https?:\/\//i.test(first) ? first : "https://" + first);
+    if (!["http:", "https:"].includes(url.protocol) || !url.hostname.includes(".")) return null;
+    if (url.username || url.password) return null;
+    return url.href;
+  } catch { return null; }
+}
+
+async function discover(query: string): Promise<Element[]> {
+  const failures: string[] = [];
+  for (const provider of providers) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 11000);
+    try {
+      const response = await fetch(provider, {
+        method: "POST",
+        body: new URLSearchParams({ data: query }),
+        headers: { "Content-Type": "application/x-www-form-urlencoded", "Accept": "application/json" },
+        signal: controller.signal,
+        cache: "no-store"
+      });
+      if (!response.ok) { failures.push(String(response.status)); continue; }
+      const data: unknown = await response.json();
+      if (typeof data !== "object" || data === null || !("elements" in data) || !Array.isArray(data.elements)) {
+        failures.push("Invalid response"); continue;
+      }
+      return data.elements as Element[];
+    } catch (error) {
+      failures.push(error instanceof Error ? error.name : "Network error");
+    } finally { clearTimeout(timer); }
+  }
+  throw new Error("All public-directory servers were unavailable (" + failures.join(", ") + ").");
+}
+
+export async function GET(request: NextRequest) {
+  const type = request.nextUrl.searchParams.get("type") || "Barbershops";
+  const area = request.nextUrl.searchParams.get("area") || "North Mississippi";
+  const rawLimit = Number(request.nextUrl.searchParams.get("limit") || 10);
+  const limit = Number.isFinite(rawLimit) ? Math.min(50, Math.max(1, Math.floor(rawLimit))) : 10;
+  if (!Object.hasOwn(areas, area) || !Object.hasOwn(categories, type)) {
+    return NextResponse.json({ error: "Choose a supported business type and location." }, { status: 400 });
+  }
+
+  const [lat, lon, radius] = areas[area];
+  const selectors = categories[type].map(tag => `nwr(around:${radius},${lat},${lon})${tag};`).join("");
+  const query = `[out:json][timeout:18];(${selectors});out tags 500;`;
+
+  try {
+    const elements = await discover(query);
+    const seen = new Set<string>();
+    const results: Lead[] = [];
+
+    for (const element of elements) {
+      const t = element.tags || {};
+      const name = str(t.name);
+      const website = normalizeWebsite(str(t.website || t["contact:website"] || t.url));
+      const phone = str(t.phone || t["contact:phone"] || t.mobile);
+      const email = str(t.email || t["contact:email"]);
+      if (!name || !website || (!phone && !email)) continue;
+
+      const hostname = new URL(website).hostname.replace(/^www\./, "").toLowerCase();
+      const dedupeKey = hostname + "|" + name.toLowerCase().replace(/\s+/g, "");
+      if (seen.has(dedupeKey)) continue;
+      seen.add(dedupeKey);
+
+      const completeness = Math.min(100, 50 + Number(!!phone) * 10 + Number(!!email) * 10 +
+        Number(!!t["addr:street"]) * 10 + Number(!!t.opening_hours) * 5);
+      results.push({
+        id: element.type + "/" + element.id, name, type,
+        place: str(t["addr:city"]) || area,
+        website, phone: phone || null, email: email || null, score: completeness,
+        source: "https://www.openstreetmap.org/" + element.type + "/" + element.id,
+        why: "Public listing includes a website and contact method. Business activity, website quality, and contact accuracy still need verification.",
+        stage: "Researching", next: "Verify business"
+      });
+    }
+
+    results.sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+    return NextResponse.json({
+      leads: results.slice(0, limit),
+      found: results.length,
+      source: "© OpenStreetMap contributors (Overpass API)",
+      notice: "These are directory matches, not independently verified sales prospects. Scores measure listing completeness only."
+    }, { headers: { "Cache-Control": "no-store" } });
+  } catch (error) {
+    console.error("Lead discovery failed:", error instanceof Error ? error.message : error);
+    return NextResponse.json({
+      error: "The public business directory is unavailable right now. Try again shortly or choose another area. No sample businesses were substituted."
+    }, { status: 503 });
   }
 }
