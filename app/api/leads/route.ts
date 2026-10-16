@@ -1,7 +1,9 @@
+import { officialLeads } from "./sources";
 import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+export const maxDuration = 30;
 
 type Tags = Record<string, string>;
 type Element = { type: "node" | "way" | "relation"; id: number; tags?: Tags };
@@ -47,7 +49,7 @@ async function discover(query: string): Promise<Element[]> {
   const failures: string[] = [];
   for (const provider of providers) {
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 11000);
+    const timer = setTimeout(() => controller.abort(), 3500);
     try {
       const response = await fetch(provider, {
         method: "POST",
@@ -83,7 +85,13 @@ export async function GET(request: NextRequest) {
   const query = `[out:json][timeout:18];(${selectors});out tags 500;`;
 
   try {
-    const elements = await discover(query);
+    const official = await officialLeads(type, area);
+    let elements: Element[] = [];
+    let directoryUnavailable = false;
+    // Directory-only records are opt-in and never mixed with contact-checked results by default.
+    if (request.nextUrl.searchParams.get("includeUnverified") === "true") {
+      try { elements = await discover(query); } catch { directoryUnavailable = true; }
+    }
     const seen = new Set<string>();
     const results: Lead[] = [];
 
@@ -114,10 +122,11 @@ export async function GET(request: NextRequest) {
 
     results.sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
     return NextResponse.json({
-      leads: results.slice(0, limit),
-      found: results.length,
-      source: "© OpenStreetMap contributors (Overpass API)",
-      notice: "These are directory matches, not independently verified sales prospects. Scores measure listing completeness only."
+      leads: [...official.leads, ...results.map(l=>({...l,verification:"unverified",checkedAt:null}))].slice(0, limit),
+      found: official.leads.length + results.length,
+      coverage: { mode: "limited-official-source-registry", attempted: official.attempted, excluded: official.failed, directoryUnavailable },
+      source: "Official business websites; optional directory records © OpenStreetMap contributors",
+      notice: "Limited researched source coverage. Only official sites that currently display the listed phone are included by default. Published contact does not prove the number works, supports SMS, or that the business is active. Fewer than the requested maximum may be available."
     }, { headers: { "Cache-Control": "no-store" } });
   } catch (error) {
     console.error("Lead discovery failed:", error instanceof Error ? error.message : error);
