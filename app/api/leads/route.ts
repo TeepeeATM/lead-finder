@@ -21,6 +21,16 @@ type Lead = {
   stage: string;
   next: string;
 };
+type GooglePlace = {
+  id: string;
+  displayName?: { text?: string };
+  formattedAddress?: string;
+  nationalPhoneNumber?: string;
+  internationalPhoneNumber?: string;
+  websiteUri?: string;
+  googleMapsUri?: string;
+  businessStatus?: string;
+};
 
 const areas: Record<string, [number, number, number]> = {
   "Memphis, TN": [35.1495, -90.049, 17000],
@@ -211,6 +221,113 @@ async function verifyDirectoryLead(
   }
 }
 
+async function googlePlaces(
+  type: string,
+  area: string,
+  limit: number,
+): Promise<Lead[]> {
+  const apiKey = process.env.GOOGLE_PLACES_API_KEY;
+  if (!apiKey) return [];
+  const places: GooglePlace[] = [];
+  let pageToken: string | undefined;
+
+  for (let page = 0; page < 3 && places.length < limit; page++) {
+    const response = await fetch(
+      "https://places.googleapis.com/v1/places:searchText",
+      {
+        method: "POST",
+        signal: AbortSignal.timeout(8000),
+        cache: "no-store",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Goog-Api-Key": apiKey,
+          "X-Goog-FieldMask":
+            "places.id,places.displayName,places.formattedAddress,places.nationalPhoneNumber,places.internationalPhoneNumber,places.websiteUri,places.googleMapsUri,places.businessStatus,nextPageToken",
+        },
+        body: JSON.stringify({
+          textQuery: `${type} in ${area}`,
+          pageSize: Math.min(20, limit - places.length),
+          pageToken,
+          includePureServiceAreaBusinesses: true,
+          languageCode: "en",
+          regionCode: "US",
+        }),
+      },
+    );
+    if (!response.ok)
+      throw new Error(`Google Places search failed (${response.status}).`);
+    const data = (await response.json()) as {
+      places?: GooglePlace[];
+      nextPageToken?: string;
+    };
+    places.push(...(data.places || []));
+    pageToken = data.nextPageToken;
+    if (!pageToken) break;
+  }
+
+  const checked = await Promise.all(
+    places.slice(0, limit).map(async (place): Promise<Lead | null> => {
+      const name = str(place.displayName?.text);
+      const website = normalizeWebsite(str(place.websiteUri));
+      const phone = str(
+        place.internationalPhoneNumber || place.nationalPhoneNumber,
+      );
+      if (
+        !name ||
+        !website ||
+        !phone ||
+        place.businessStatus === "CLOSED_PERMANENTLY"
+      )
+        return null;
+      try {
+        const response = await fetch(website, {
+          signal: AbortSignal.timeout(4500),
+          cache: "no-store",
+          redirect: "follow",
+          headers: {
+            Accept: "text/html",
+            "User-Agent": "CairvantLeadFinder/1.0",
+          },
+        });
+        if (
+          !response.ok ||
+          !response.headers.get("content-type")?.includes("text/html")
+        )
+          return null;
+        const text = visibleText(await response.text());
+        if (
+          digits(phone).length !== 10 ||
+          !text.replace(/\D/g, "").includes(digits(phone))
+        )
+          return null;
+        const emails =
+          text.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi) || [];
+        const email =
+          emails.find(
+            (value) => !/example\.|sentry\.|wixpress\./i.test(value),
+          ) || null;
+        return {
+          id: `google:${place.id}`,
+          name,
+          type,
+          place: str(place.formattedAddress) || area,
+          website,
+          phone,
+          email,
+          score: email ? 95 : 85,
+          source: place.googleMapsUri || website,
+          why: "Google Places contact matched the phone displayed on the business's official website during this search.",
+          stage: "Researching",
+          next: "Review and contact",
+        };
+      } catch {
+        return null;
+      }
+    }),
+  );
+  return checked.filter((lead): lead is Lead => lead !== null);
+}
+
 export async function GET(request: NextRequest) {
   const type = request.nextUrl.searchParams.get("type") || "Barbershops";
   const area = request.nextUrl.searchParams.get("area") || "North Mississippi";
@@ -233,6 +350,13 @@ export async function GET(request: NextRequest) {
 
   try {
     const official = await officialLeads(type, area);
+    let googleResults: Lead[] = [];
+    let googleUnavailable = false;
+    try {
+      googleResults = await googlePlaces(type, area, limit);
+    } catch {
+      googleUnavailable = true;
+    }
     let elements: Element[] = [];
     let directoryUnavailable = false;
     try {
@@ -278,6 +402,11 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(
       {
         leads: [
+          ...googleResults.map((lead) => ({
+            ...lead,
+            verification: "published-contact",
+            checkedAt: new Date().toISOString(),
+          })),
           ...official.leads,
           ...results.map((l) => ({
             ...l,
@@ -294,15 +423,19 @@ export async function GET(request: NextRequest) {
               ) === index,
           )
           .slice(0, limit),
-        found: official.leads.length + results.length,
+        found: googleResults.length + official.leads.length + results.length,
         coverage: {
-          mode: "live-directory-plus-official-site-check",
-          attempted: official.attempted + candidates.length,
+          mode: process.env.GOOGLE_PLACES_API_KEY
+            ? "google-places-plus-live-directory"
+            : "live-directory-plus-official-site-check",
+          attempted:
+            googleResults.length + official.attempted + candidates.length,
           excluded: official.failed + candidates.length - results.length,
           directoryUnavailable,
+          googleUnavailable,
         },
         source:
-          "Official business websites; optional directory records © OpenStreetMap contributors",
+          "Google Places, official business websites, and directory records © OpenStreetMap contributors",
         notice:
           "Live public listings are checked against each business website. Only records whose website currently displays the listed phone or email are shown. Published contact does not guarantee deliverability or business activity, so review each lead before outreach.",
       },
