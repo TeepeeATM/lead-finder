@@ -1,13 +1,23 @@
 # Cairvant Lead Finder
 
-Search defaults to a limited, researched registry of official business websites. Every request fetches matching sources concurrently (6.5-second timeout each), requires the researched business identity and exact published phone in visible page text, and excludes failures or mismatches. There are no sample records, generated contacts, or cached contacts substituted on failure. Coverage is intentionally incomplete; an empty search is valid, especially Horn Lake and Tunica where no sources have been researched yet. Service areas are labeled separately from physical locations.
+The app contains a dated, local lead catalog drawn from [Overture Maps Places](https://docs.overturemaps.org/guides/places/) release `2026-09-23.1`. It covers the Memphis metro and North Mississippi and currently has 526 records in 23 niches. The build filters for Overture existence confidence of at least 0.95, `operating_status = open`, a local town, a website, and a phone. It then fetches the business website, requiring the business name and exact phone in page text. Sites or contact pages that fail are excluded. The app checks the same source again before displaying each result. It never fills gaps with invented businesses.
 
-`verification: published-contact` confirms only that the official source responded and displayed that number at `checkedAt`. It does not verify phone deliverability, ownership, SMS support, current business activity, or sales suitability. Emails are omitted unless independently sourced. Scores retain the original completeness scale (50 for website + 10 for phone), not purchase likelihood.
+These checks prove that the web page responded and published the listed phone at the displayed check time. They do **not** prove that a call or SMS is delivered, the business is still open today, or the business is profitable or growing. Overture's confidence describes existence, not sales quality. Overture itself [documents duplicates and property errors](https://docs.overturemaps.org/guides/places/), so a user should review a lead before outreach. Email is omitted unless sourced and checked. The date of the source data and current check time are visible in the API response or detail panel.
 
-`GET /api/leads?type=Barbershops&area=North%20Mississippi&limit=10`
+`GET /api/leads?meta=true` returns niches, areas, and catalog size. `GET /api/leads?type=All%20niches&area=Greater%20Memphis%20area&limit=25&offset=0` searches the catalog and live-checks each candidate on that page. `nextOffset` drives **Load more**. Searches are mixed across niches when All niches is selected. Saved leads remain in browser local storage. The dated CSV under `public/` is a bulk snapshot with its original check times; use the interactive search for a new check at viewing time.
 
-Optional `includeUnverified=true` also requests OpenStreetMap directory listings. These carry `verification: unverified`, and remain disabled in the UI. An Overpass outage does not discard official-source results. Default searches do not depend on Overpass. The `coverage` response explains source checks/exclusions. Unsupported filters return 400; successful searches with zero matches return 200. No API key is required.
+## Refreshing the catalog
 
-To expand coverage, research an official website, phone, identity and location/service area, then add it to `app/api/leads/sources.ts`. Never infer contacts or service coverage. Keep source URLs code-controlled to prevent arbitrary server-side fetching.
+Install Python 3.12+ and `pip install -r scripts/requirements.txt`. Create `work/catalog` and download an area extract with:
 
-Run `npm ci`, `node --experimental-strip-types --test app/api/leads/sources.test.mjs`, and `npm run build`. Tests cover exact phone/identity matching, script-only rejection, source outages, changed contacts and uncovered locations. `npm run dev` starts the UI. Saved leads remain local to the browser and their check timestamps may become stale.
+```
+python -m overturemaps download --bbox=-90.45,34.65,-89.65,35.32 -f geojsonseq -t place -r 2026-09-23.1 -o work/catalog/memphis-places.geojsonseq
+python scripts/select_places.py
+python scripts/verify_places.py
+python scripts/verify_contact_pages.py
+python scripts/package_leads.py
+```
+
+For a new release, update the release ID in the download command, `scripts/select_places.py`, and the API metadata. Clear the three verification JSONL files in ignored `work/catalog` before regenerating to ensure every record receives a fresh check. Review category and city mappings when the Overture taxonomy changes. The inclusion script excludes sources with licenses other than CDLA Permissive 2.0; Overture Places records in this catalog come from Meta and other CDLA contributors. [Attribution and licensing](https://docs.overturemaps.org/attribution/).
+
+Run `npm ci`, `node --experimental-strip-types --test app/api/leads/validation.test.mjs`, and `npm run build`. The app has no paid provider or API key requirement.
