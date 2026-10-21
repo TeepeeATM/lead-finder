@@ -36,3 +36,5 @@ The legacy static catalog and scripts remain for provenance but are not used by 
 Keep the existing Vercel project and Deployment Protection enabled. Use the protected deployment URL for the private workspace. Do not change the access audience or contact prospects as part of deployment.
 
 Map data © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), ODbL. Public Overpass instances: https://wiki.openstreetmap.org/wiki/Overpass_API . No map autocomplete or public Nominatim requests are made.
+
+For explicit live-provider verification after building: `node scripts/live-smoke.mjs`. This starts the built API on localhost, runs four real Memphis searches, logs only counts/status, and exits unsuccessfully if map discovery fails. Zero qualified leads remains a valid empty result, not proof of useful lead availability.

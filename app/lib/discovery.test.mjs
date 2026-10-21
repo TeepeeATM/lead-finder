@@ -18,6 +18,9 @@ test('existing websites excluded at both map and web-check stages',()=>{
 test('social pages allowed; unreachable and ambiguous verification withheld',()=>{
  assert.ok(toCandidate({...base,tags:{...base.tags,website:'https://facebook.com/examplebarber'}},'Barbershops','Memphis'));
  assert.equal(classifyEvidence(c,[[item]]).status,'inconclusive');
+ assert.equal(classifyEvidence(c,[[item],[{...item,title:'Other business',description:'Other business phone 9015550123'}]]).status,'inconclusive');
+ assert.equal(classifyEvidence(c,[[item],[{...item,description:item.description+' website https://examplebarber.com'}]]).status,'website-found');
+ assert.equal(classifyEvidence(c,[[item],[{...item,url:'https://sites.google.com/view/example'}]]).status,'website-found');
  assert.equal(classifyEvidence(c,[[item],[{title:'Different business',url:'https://unknown.example',description:'unrelated'}]]).status,'inconclusive');
  assert.throws(()=>parseRss('<html>captcha</html>'));
 });

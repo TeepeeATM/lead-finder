@@ -9,7 +9,7 @@ export type Element = {type:string;id:number;tags?:Record<string,string>;lat?:nu
 export type Candidate = {id:string;name:string;type:string;place:string;phone:string|null;email:string|null;source:string;website:string|null;socials:string[];lat:number;lon:number};
 export type Evidence = {title:string;url:string;description:string};
 const socialHosts = ['facebook.com','instagram.com','tiktok.com','youtube.com','x.com','twitter.com'];
-const directoryHosts = [...socialHosts,'yelp.com','yellowpages.com','mapquest.com','bbb.org','chamberofcommerce.com','manta.com','superpages.com','foursquare.com','nextdoor.com','booksy.com','fresha.com','vagaro.com','styleseat.com','google.com','maps.apple.com','openstreetmap.org'];
+const directoryHosts = [...socialHosts,'yelp.com','yellowpages.com','mapquest.com','bbb.org','chamberofcommerce.com','manta.com','superpages.com','foursquare.com','nextdoor.com','booksy.com','fresha.com','vagaro.com','styleseat.com','maps.apple.com','openstreetmap.org'];
 function belongs(host:string,domains:string[]){return domains.some(d=>host===d||host.endsWith('.'+d));}
 export function safeUrl(value:string){try{const u=new URL(/^https?:\/\//i.test(value)?value:'https://'+value);return ['http:','https:'].includes(u.protocol)&&!u.username&&!u.password&&u.hostname.includes('.')?u.href:null;}catch{return null;}}
 export function normalizePhone(value:string){const digits=value.replace(/\D/g,'');const local=digits.length===11&&digits[0]==='1'?digits.slice(1):digits;return /^[2-9]\d{2}[2-9]\d{6}$/.test(local)?'+1'+local:null;}
@@ -44,9 +44,14 @@ function tokens(s:string){return (s.toLowerCase().match(/[a-z0-9]+/g)||[]).filte
 export function classifyEvidence(candidate:Candidate,groups:Evidence[][]):{status:'no-website-found'|'website-found'|'inconclusive';evidence:Evidence[]}{
  if(groups.length<2||groups.some(g=>!g.length))return {status:'inconclusive',evidence:[]};
  const words=tokens(candidate.name);if(!words.length)return {status:'inconclusive',evidence:[]};
- const all=groups.flat();const related=all.filter(e=>{const text=tokens(e.title+' '+e.description).join(' ');return words.every(w=>text.split(' ').includes(w));});
+ const matches=(e:Evidence)=>{const text=tokens(e.title+' '+e.description);return words.every(w=>text.includes(w));};
+ if(groups.some(g=>!g.some(matches)))return {status:'inconclusive',evidence:[]};
+ const all=groups.flat();const related=all.filter(matches);
  // Any unknown or standalone destination in either search is unresolved: do not certify absence.
- for(const e of related){const u=safeUrl(e.url);if(!u)return {status:'inconclusive',evidence:related};if(!belongs(new URL(u).hostname,directoryHosts))return {status:'website-found',evidence:related};}
+ for(const e of related){
+  const mentioned=(e.description.match(/https?:\/\/[^\s<>"']+|www\.[^\s<>"']+/gi)||[]).map(safeUrl);
+  if(mentioned.some(u=>u&&!belongs(new URL(u).hostname,directoryHosts)))return {status:'website-found',evidence:related};
+  const u=safeUrl(e.url);if(!u)return {status:'inconclusive',evidence:related};if(!belongs(new URL(u).hostname,directoryHosts))return {status:'website-found',evidence:related};}
  if(all.some(e=>{const u=safeUrl(e.url);return !u||!belongs(new URL(u).hostname,directoryHosts)}))return {status:'inconclusive',evidence:related};
  // Require corroboration of the exact business identity AND a published phone, not an empty OSM website field.
  const corroborated=related.filter(e=>candidate.phone&&(e.title+' '+e.description).replace(/\D/g,'').includes(candidate.phone.slice(2)));
