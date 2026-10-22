@@ -4,11 +4,13 @@ const leads = JSON.parse(await fs.readFile('app/data/leads.json', 'utf8'));
 const audits = JSON.parse(await fs.readFile('work/catalog/site-audit.json', 'utf8'));
 const byId = new Map(leads.map(lead => [lead.id, lead]));
 const seen = new Set();
-const opportunities = audits.filter(audit => audit.issueCount >= 2).flatMap(audit => {
+const materialIssue = issue => issue.startsWith('No mobile viewport') || issue.startsWith('No dedicated contact') || issue.startsWith('Missing or generic page title');
+const opportunities = audits.filter(audit => audit.issues.some(materialIssue)).flatMap(audit => {
   const lead = byId.get(audit.id);
   if (!lead || seen.has(lead.phone)) return [];
   seen.add(lead.phone);
-  return [{ ...lead, audit: { checkedUrl: audit.checkedUrl, checkedAt: audit.checkedAt, issues: audit.issues } }];
+  return [{ ...lead, audit: { checkedUrl: audit.checkedUrl, checkedAt: audit.checkedAt, issues: audit.issues,
+    priority: audit.issues.length >= 2 ? 'Multiple issues' : 'One visible issue' } }];
 });
 opportunities.sort((a, b) => b.audit.issues.length - a.audit.issues.length || a.niche.localeCompare(b.niche) || a.name.localeCompare(b.name));
 await fs.writeFile('app/data/opportunities.json', JSON.stringify(opportunities, null, 2) + '\n');
@@ -19,5 +21,5 @@ for (const row of opportunities) lines.push([
   row.name,row.niche,row.city,row.state,row.website,"'" + row.phone,row.contactSource,
   row.audit.checkedUrl,row.audit.checkedAt,row.audit.issues.join('; '),row.catalogCheckedAt
 ].map(csv).join(','));
-await fs.writeFile('public/website-opportunities-2026-10-22.csv', lines.join('\r\n') + '\r\n');
-console.log(`${opportunities.length} distinct businesses with at least two visible site issues`);
+await fs.writeFile('public/website-opportunities.csv', lines.join('\r\n') + '\r\n');
+console.log(`${opportunities.length} distinct businesses with a concrete website issue`);

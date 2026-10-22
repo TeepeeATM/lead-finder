@@ -1,24 +1,252 @@
 [
   {
-    "id": "412f497b-db4f-4eee-9912-3b148d0596db",
-    "name": "Acre Restaurant",
-    "niche": "Restaurants",
-    "city": "Memphis",
+    "id": "1944ee7f-4089-4151-834f-a01578b4fb0b",
+    "name": "Bartlett Body Shop",
+    "niche": "Auto repair",
+    "city": "Bartlett",
     "state": "TN",
-    "website": "http://www.acrememphis.com/",
-    "phone": "9018182273",
-    "contactSource": "http://www.acrememphis.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:57.476173+00:00",
+    "website": "http://bartlettbodyshop.com/",
+    "phone": "9013865677",
+    "contactSource": "https://110762d.netsolhost.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:17.487192+00:00",
     "confidence": 0.9902,
-    "release": "2026-09-23.1",
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "http://www.acrememphis.com/",
-      "checkedAt": "2026-10-22T16:46:51.985Z",
+      "checkedUrl": "https://110762d.netsolhost.com/",
+      "checkedAt": "2026-10-22T17:52:46.277Z",
+      "issues": [
+        "Missing or generic page title",
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "ba6cb375-3e38-4bd4-b6cf-e49f6fca6f4e",
+    "name": "Central Collision Center",
+    "niche": "Auto repair",
+    "city": "Jonesboro",
+    "state": "AR",
+    "website": "https://centralcollisionctr.com/",
+    "phone": "8703363255",
+    "contactSource": "https://centralcollisionctr.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:28.940819+00:00",
+    "confidence": 0.9913,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://centralcollisionctr.com/",
+      "checkedAt": "2026-10-22T17:52:47.782Z",
+      "issues": [
+        "No mobile viewport tag on the checked page",
+        "Missing or generic page title",
+        "No search description on the checked page"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "67cedcab-0473-484f-b710-30edbbcb48d0",
+    "name": "Eco Clean",
+    "niche": "Cleaning services",
+    "city": "Southaven",
+    "state": "MS",
+    "website": "http://www.ecocleanllc.net/",
+    "phone": "6625105715",
+    "contactSource": "http://www.ecocleanllc.net/",
+    "catalogCheckedAt": "2026-10-22T17:50:01.720645+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "http://www.ecocleanllc.net/",
+      "checkedAt": "2026-10-22T17:52:54.495Z",
+      "issues": [
+        "No mobile viewport tag on the checked page",
+        "Missing or generic page title",
+        "No search description on the checked page"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "d914eaab-c24b-4021-a48d-5f51211934a3",
+    "name": "Center Line Electric",
+    "niche": "Electricians",
+    "city": "Bells",
+    "state": "TN",
+    "website": "http://www.centerlineelectric.co/",
+    "phone": "7314360012",
+    "contactSource": "https://centerlineelectric.co/",
+    "catalogCheckedAt": "2026-10-22T17:50:02.575431+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://centerlineelectric.co/",
+      "checkedAt": "2026-10-22T17:52:54.915Z",
+      "issues": [
+        "Missing or generic page title",
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "b5c4c581-d6ee-4ca5-9721-b9ee3e711678",
+    "name": "Parham Heating, Cooling, Plumbing & Electric, LLC",
+    "niche": "Electricians",
+    "city": "Trenton",
+    "state": "TN",
+    "website": "https://www.callparham.com/",
+    "phone": "7318554328",
+    "contactSource": "https://www.callparham.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:06.225616+00:00",
+    "confidence": 0.9876,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.callparham.com/",
+      "checkedAt": "2026-10-22T17:52:56.048Z",
+      "issues": [
+        "No mobile viewport tag on the checked page",
+        "Missing or generic page title",
+        "No search description on the checked page"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "9be21106-9ac2-431d-8322-8c0865a77884",
+    "name": "Quantum Electric Inc.",
+    "niche": "Electricians",
+    "city": "Millington",
+    "state": "TN",
+    "website": "http://www.quantumelectric.mysite.com/",
+    "phone": "9013808508",
+    "contactSource": "http://www.quantumelectric.mysite.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:04.434607+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "http://www.quantumelectric.mysite.com/",
+      "checkedAt": "2026-10-22T17:52:55.816Z",
       "issues": [
         "No mobile viewport tag on the checked page",
         "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "0bef8a81-565e-4186-a633-3efb84512f68",
+    "name": "Turfmaster",
+    "niche": "Landscaping & lawn care",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.turfmasterinc.com/",
+    "phone": "9017954301",
+    "contactSource": "http://turfmasterinc.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:21.737176+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "http://turfmasterinc.com/",
+      "checkedAt": "2026-10-22T17:53:01.993Z",
+      "issues": [
+        "No mobile viewport tag on the checked page",
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "ff9edc91-8b85-4c2b-8af9-78a8327315da",
+    "name": "Barnes & Brower Inc",
+    "niche": "Remodeling & contractors",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://barnesandbrower.com",
+    "phone": "9017943481",
+    "contactSource": "https://barnesandbrower.com",
+    "catalogCheckedAt": "2026-10-22T17:50:39.973598+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://barnesandbrower.com/",
+      "checkedAt": "2026-10-22T17:53:10.604Z",
+      "issues": [
+        "No mobile viewport tag on the checked page",
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "e1ac5e86-1c22-4355-b7b6-bfcac9ceeae5",
+    "name": "American Tire Repair",
+    "niche": "Auto repair",
+    "city": "Hernando",
+    "state": "MS",
+    "website": "https://www.americantirerepair.com",
+    "phone": "6624490110",
+    "contactSource": "https://www.americantirerepair.com",
+    "catalogCheckedAt": "2026-10-22T17:49:25.440942+00:00",
+    "confidence": 0.9902,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.americantirerepair.com/",
+      "checkedAt": "2026-10-22T17:52:46.915Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "3479a26e-84ab-4e79-8b28-36c97196fb62",
+    "name": "Auto Trim Design",
+    "niche": "Auto repair",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.atdmemphis.com",
+    "phone": "9017433122",
+    "contactSource": "http://www.atdmemphis.com",
+    "catalogCheckedAt": "2026-10-22T17:49:35.736723+00:00",
+    "confidence": 0.9902,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "http://www.atdmemphis.com/",
+      "checkedAt": "2026-10-22T17:52:49.232Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "67048e0a-06c5-4be2-b1ed-e1ef008f3932",
+    "name": "Century Hydraulics and MFG",
+    "niche": "Auto repair",
+    "city": "West Memphis",
+    "state": "AR",
+    "website": "http://www.centuryhydraulicsandmfg.com/",
+    "phone": "8707322090",
+    "contactSource": "https://centuryhydraulicsandmfg.com/?p=1",
+    "catalogCheckedAt": "2026-10-22T17:49:59.364723+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://centuryhydraulicsandmfg.com/?p=1",
+      "checkedAt": "2026-10-22T17:52:54.349Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "Multiple issues"
     }
   },
   {
@@ -30,646 +258,1711 @@
     "website": "http://dougsautoshop.com/",
     "phone": "9017919169",
     "contactSource": "https://dougsautoshop.com/",
-    "catalogCheckedAt": "2026-10-21T16:48:43.442542+00:00",
+    "catalogCheckedAt": "2026-10-22T17:49:34.471217+00:00",
     "confidence": 0.9999,
-    "release": "2026-09-23.1",
+    "release": "2026-10-21.0",
     "audit": {
       "checkedUrl": "https://dougsautoshop.com/",
-      "checkedAt": "2026-10-22T16:46:29.855Z",
+      "checkedAt": "2026-10-22T17:52:48.974Z",
       "issues": [
         "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "Multiple issues"
     }
   },
   {
-    "id": "9370e956-e368-4995-9593-c5d0f6cd8e5a",
-    "name": "Fringe Hair Co.",
-    "niche": "Beauty salons",
-    "city": "Germantown",
+    "id": "0fbd577d-bb4a-474a-acb8-3c468194310c",
+    "name": "Godbold Engineering",
+    "niche": "Auto repair",
+    "city": "Lakeland",
     "state": "TN",
-    "website": "http://www.fringehairco.com/",
-    "phone": "9017511108",
-    "contactSource": "https://fringehairco.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:00.298286+00:00",
-    "confidence": 0.9902,
-    "release": "2026-09-23.1",
+    "website": "http://www.godboldengineering.com/",
+    "phone": "9013554306",
+    "contactSource": "https://www.godboldengineering.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:33.703021+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://fringehairco.com/",
-      "checkedAt": "2026-10-22T16:46:33.321Z",
+      "checkedUrl": "https://www.godboldengineering.com/",
+      "checkedAt": "2026-10-22T17:52:48.436Z",
       "issues": [
         "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "Multiple issues"
     }
   },
   {
-    "id": "e51af476-c3d9-4247-ac4c-9147a31dc532",
-    "name": "Crazy Gander Coffee Company",
-    "niche": "Coffee shops",
+    "id": "195b4889-b897-46ff-8909-1481a8f24cdc",
+    "name": "Ron's Auto and Diesel Services",
+    "niche": "Auto repair",
+    "city": "Jonesboro",
+    "state": "AR",
+    "website": "http://www.activemember.com/ronsautodieselservice",
+    "phone": "8709330541",
+    "contactSource": "https://www.activemember.com/ronsautodieselservice",
+    "catalogCheckedAt": "2026-10-22T17:49:35.274971+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.activemember.com/ronsautodieselservice",
+      "checkedAt": "2026-10-22T17:52:49.553Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "a045f3f8-2dc4-42dd-bf84-3aeb6de1b770",
+    "name": "Xquisite Shine",
+    "niche": "Cleaning services",
     "city": "Memphis",
     "state": "TN",
-    "website": "http://crazygander.com/",
-    "phone": "9015523852",
-    "contactSource": "https://www.crazygander.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:11.346536+00:00",
-    "confidence": 0.9902,
-    "release": "2026-09-23.1",
+    "website": "http://thexquisitestore.blogspot.com/2020/07/xs.html?m=1",
+    "phone": "9014535927",
+    "contactSource": "https://thexquisitestore.blogspot.com/2020/07/xs.html?m=1",
+    "catalogCheckedAt": "2026-10-22T17:49:59.337497+00:00",
+    "confidence": 0.9722,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://www.crazygander.com/",
-      "checkedAt": "2026-10-22T16:46:35.977Z",
+      "checkedUrl": "https://thexquisitestore.blogspot.com/2020/07/xs.html?m=1",
+      "checkedAt": "2026-10-22T17:52:54.043Z",
       "issues": [
         "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "Multiple issues"
     }
   },
   {
-    "id": "b27f7d10-bdb8-4326-8b8f-9a2f81ed6abd",
-    "name": "Mario E Alfonso, DDS",
-    "niche": "Dentists",
-    "city": "Southaven",
+    "id": "d42c3936-317e-4454-b4ba-1a39c73f8285",
+    "name": "Advance Electric",
+    "niche": "Electricians",
+    "city": "Olive Branch",
     "state": "MS",
-    "website": "http://marioalfonsodds.com/",
-    "phone": "6623493038",
-    "contactSource": "https://www.marioalfonsodds.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:15.096573+00:00",
-    "confidence": 0.9991,
-    "release": "2026-09-23.1",
+    "website": "http://www.advance-electric.net",
+    "phone": "6628956335",
+    "contactSource": "https://www.advance-electric.net/",
+    "catalogCheckedAt": "2026-10-22T17:50:04.887403+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://www.marioalfonsodds.com/",
-      "checkedAt": "2026-10-22T16:46:38.288Z",
+      "checkedUrl": "https://www.advance-electric.net/",
+      "checkedAt": "2026-10-22T17:52:55.925Z",
       "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+        "Missing or generic page title",
+        "No search description on the checked page"
+      ],
+      "priority": "Multiple issues"
     }
   },
   {
-    "id": "e03e3e18-7060-4de1-be49-560145826403",
-    "name": "Arch 2 Arch",
-    "niche": "Hair salons",
-    "city": "Bartlett",
+    "id": "0635975e-0774-4332-98b7-6e618774e369",
+    "name": "Southern Electric Company",
+    "niche": "Electricians",
+    "city": "Memphis",
     "state": "TN",
-    "website": "https://a2aspasalon.com/locations",
-    "phone": "8882242724",
-    "contactSource": "https://a2aspasalon.com/locations/",
-    "catalogCheckedAt": "2026-10-21T16:49:34.442805+00:00",
-    "confidence": 0.986,
-    "release": "2026-09-23.1",
+    "website": "http://www.southernelectriccompany.net",
+    "phone": "9012589750",
+    "contactSource": "http://www.southernelectriccompany.net/about-memphis-electrician.html",
+    "catalogCheckedAt": "2026-10-22T17:51:42.911342+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://a2aspasalon.com/locations/",
-      "checkedAt": "2026-10-22T16:46:45.405Z",
-      "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
-    }
-  },
-  {
-    "id": "c1c55661-5ea6-4025-8c24-8f0a2dae1972",
-    "name": "Dr. S.W. Hora",
-    "niche": "Optometrists",
-    "city": "Collierville",
-    "state": "TN",
-    "website": "http://www.swhoraod.com/",
-    "phone": "9018531420",
-    "contactSource": "http://www.swhoraod.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:45.510904+00:00",
-    "confidence": 0.9714,
-    "release": "2026-09-23.1",
-    "audit": {
-      "checkedUrl": "http://www.swhoraod.com/",
-      "checkedAt": "2026-10-22T16:46:46.393Z",
+      "checkedUrl": "http://www.southernelectriccompany.net/",
+      "checkedAt": "2026-10-22T17:52:58.805Z",
       "issues": [
         "No mobile viewport tag on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "Multiple issues"
     }
   },
   {
-    "id": "72056419-edc0-4eed-bfb2-a506267e904e",
-    "name": "Mid South Vision Center",
-    "niche": "Optometrists",
+    "id": "705913c9-89a7-4047-a91e-a111f1f4059d",
+    "name": "Air Components Inc",
+    "niche": "HVAC",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://aircompinc.com/",
+    "phone": "9013821884",
+    "contactSource": "http://aircompinc.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:12.004134+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "http://aircompinc.com/",
+      "checkedAt": "2026-10-22T17:52:57.738Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "1d9d5b95-b4bc-4eb7-bc02-06464416207f",
+    "name": "All Day Lawn",
+    "niche": "Landscaping & lawn care",
+    "city": "Brighton",
+    "state": "TN",
+    "website": "http://www.alldaylawn.com/",
+    "phone": "9014760079",
+    "contactSource": "http://www.alldaylawn.com/about.html",
+    "catalogCheckedAt": "2026-10-22T17:51:55.099105+00:00",
+    "confidence": 0.9955,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "http://www.alldaylawn.com/",
+      "checkedAt": "2026-10-22T17:53:02.346Z",
+      "issues": [
+        "No mobile viewport tag on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "25176a6f-3b41-4f52-9f35-6e641a8d3c16",
+    "name": "HD Landscape",
+    "niche": "Landscaping & lawn care",
     "city": "Bartlett",
     "state": "TN",
-    "website": "http://www.Midsouthvisioncenter.com/",
-    "phone": "9013734207",
-    "contactSource": "https://www.midsouthvisioncenter.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:46.976162+00:00",
-    "confidence": 0.9902,
-    "release": "2026-09-23.1",
+    "website": "http://hdlandscape-lawns.com/",
+    "phone": "9013618715",
+    "contactSource": "https://www.hdlandscape-lawns.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:17.289465+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://www.midsouthvisioncenter.com/",
-      "checkedAt": "2026-10-22T16:46:46.571Z",
+      "checkedUrl": "https://www.hdlandscape-lawns.com/",
+      "checkedAt": "2026-10-22T17:53:00.177Z",
       "issues": [
         "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "Multiple issues"
     }
   },
   {
-    "id": "ee828d8f-161d-4981-ac6a-542c81a342b2",
-    "name": "Mid South Vision Center",
-    "niche": "Optometrists",
+    "id": "5707abf2-e38c-4f58-9b82-555db36f7dd9",
+    "name": "Coleman And Owen Construction, Inc.",
+    "niche": "Remodeling & contractors",
     "city": "Memphis",
     "state": "TN",
-    "website": "http://www.midsouthvisioncenter.com/",
-    "phone": "9013243189",
-    "contactSource": "https://www.midsouthvisioncenter.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:46.827003+00:00",
-    "confidence": 0.9902,
-    "release": "2026-09-23.1",
+    "website": "https://colemanowen.com",
+    "phone": "9017306339",
+    "contactSource": "https://www.colemanowen.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:42.734040+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://www.midsouthvisioncenter.com/",
-      "checkedAt": "2026-10-22T16:46:46.728Z",
+      "checkedUrl": "https://www.colemanowen.com/",
+      "checkedAt": "2026-10-22T17:53:10.812Z",
       "issues": [
-        "No search description on the checked page",
+        "Missing or generic page title",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "Multiple issues"
     }
   },
   {
-    "id": "a4a4f687-2e56-43f3-9c8e-40c60f165fe3",
-    "name": "Momentum Physical Therapy",
-    "niche": "Physical therapy",
-    "city": "Memphis",
+    "id": "a715c814-907d-4d9a-ac8d-b551ec2bb0a1",
+    "name": "Door & Millwork Specialties",
+    "niche": "Remodeling & contractors",
+    "city": "Millington",
     "state": "TN",
-    "website": "http://momentumrehab.com/",
-    "phone": "9012573422",
-    "contactSource": "http://momentumrehab.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:46.252563+00:00",
-    "confidence": 1,
-    "release": "2026-09-23.1",
+    "website": "http://doormillspec.com/",
+    "phone": "9018730707",
+    "contactSource": "https://doormillspec.com/contactus.html",
+    "catalogCheckedAt": "2026-10-22T17:52:06.256001+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "http://momentumrehab.com/",
-      "checkedAt": "2026-10-22T16:46:47.387Z",
+      "checkedUrl": "https://doormillspec.com/",
+      "checkedAt": "2026-10-22T17:53:10.442Z",
       "issues": [
-        "No search description on the checked page",
+        "No mobile viewport tag on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "Multiple issues"
     }
   },
   {
-    "id": "39bc0d08-7d49-4360-ae1e-4faaddf14c23",
-    "name": "Southern Hand Center",
-    "niche": "Physical therapy",
-    "city": "Southaven",
+    "id": "c6cf229c-6f9e-4522-897e-62c925958f79",
+    "name": "Jaynes Homes and Construction",
+    "niche": "Remodeling & contractors",
+    "city": "Jonesboro",
+    "state": "AR",
+    "website": "http://www.houzz.com/pro/dljaynes/jaynes-construction",
+    "phone": "8709744403",
+    "contactSource": "https://www.houzz.com/professionals/home-builders/jaynes-homes-and-construction-pfvwus-pf~311617726",
+    "catalogCheckedAt": "2026-10-22T17:50:39.489709+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.houzz.com/pro/dljaynes/jaynes-construction",
+      "checkedAt": "2026-10-22T17:53:09.163Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "57eb6fc0-d41a-48ad-b4a9-ff776393f4ce",
+    "name": "Surface Solutions Unlimited",
+    "niche": "Remodeling & contractors",
+    "city": "West Memphis",
+    "state": "AR",
+    "website": "http://www.surfacesolutionsunlimited.com/",
+    "phone": "9018480260",
+    "contactSource": "https://www.surfacesolutionsunlimited.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:48.340064+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.surfacesolutionsunlimited.com/",
+      "checkedAt": "2026-10-22T17:53:12.284Z",
+      "issues": [
+        "No mobile viewport tag on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "0555f378-0367-434a-85fa-74a32cc7901b",
+    "name": "Gutterman Company Inc",
+    "niche": "Roofing",
+    "city": "Lake Cormorant",
     "state": "MS",
-    "website": "http://southernhand.com",
-    "phone": "6625364695",
-    "contactSource": "https://southernhand.com/locations/",
-    "catalogCheckedAt": "2026-10-21T16:52:19.017787+00:00",
-    "confidence": 0.977,
-    "release": "2026-09-23.1",
+    "website": "http://www.thegutterman.com/",
+    "phone": "6623421558",
+    "contactSource": "https://www.thegutterman.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:53.271690+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://southernhand.com/",
-      "checkedAt": "2026-10-22T16:46:51.486Z",
+      "checkedUrl": "https://www.thegutterman.com/",
+      "checkedAt": "2026-10-22T17:53:15.384Z",
       "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+        "Missing or generic page title",
+        "No search description on the checked page"
+      ],
+      "priority": "Multiple issues"
     }
   },
   {
-    "id": "fb80898f-83d4-42d2-aa0e-9e45c0e9e6b1",
-    "name": "The Home Partners Realty",
-    "niche": "Real estate agents",
+    "id": "fafd252c-8ac4-4f2d-92a6-38e25c974f8c",
+    "name": "Sam's Construction",
+    "niche": "Roofing",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://samsconstruction901.com/",
+    "phone": "9018009406",
+    "contactSource": "https://samsconstruction901.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:53.587935+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://samsconstruction901.com/",
+      "checkedAt": "2026-10-22T17:53:12.951Z",
+      "issues": [
+        "Missing or generic page title",
+        "No search description on the checked page"
+      ],
+      "priority": "Multiple issues"
+    }
+  },
+  {
+    "id": "ff4d12e2-2783-4105-9b5b-3f336fedc592",
+    "name": "A-1 Tire and Auto",
+    "niche": "Auto repair",
+    "city": "Bono",
+    "state": "AR",
+    "website": "https://a1tirearkansas.com/",
+    "phone": "8709337420",
+    "contactSource": "https://www.a1tirearkansas.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:20.437889+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.a1tirearkansas.com/",
+      "checkedAt": "2026-10-22T17:52:46.242Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "f521ecf3-d838-49f6-ba56-8d0c74398511",
+    "name": "Allen's Automotive Center",
+    "niche": "Auto repair",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://allensautomotivecenter.com/",
+    "phone": "9013323279",
+    "contactSource": "https://allensautomotivecenter.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:42.369091+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://allensautomotivecenter.com/",
+      "checkedAt": "2026-10-22T17:52:50.774Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "ddd36eec-e9ad-4918-bcf9-31d509a484d1",
+    "name": "Byhalia Tire & Battery",
+    "niche": "Auto repair",
+    "city": "Byhalia",
+    "state": "MS",
+    "website": "http://www.byhaliatire.com/",
+    "phone": "6628386872",
+    "contactSource": "https://www.byhaliatire.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:19.303302+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.byhaliatire.com/",
+      "checkedAt": "2026-10-22T17:52:46.112Z",
+      "issues": [
+        "No mobile viewport tag on the checked page"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "d74415ce-71a5-4ae2-b1e7-3e380b7f7c18",
+    "name": "CB's Customs",
+    "niche": "Auto repair",
+    "city": "Batesville",
+    "state": "MS",
+    "website": "http://www.cbs-customs.com/",
+    "phone": "6626383007",
+    "contactSource": "https://www.cbs-customs.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:17.587873+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.cbs-customs.com/",
+      "checkedAt": "2026-10-22T17:52:46.109Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "e66b9185-8da1-496c-89dc-dcd105a45a96",
+    "name": "Collision Repair of Jonesboro",
+    "niche": "Auto repair",
+    "city": "Jonesboro",
+    "state": "AR",
+    "website": "http://collisionrepairofjonesboro.com/",
+    "phone": "8709359482",
+    "contactSource": "https://www.collisionrepairofjonesboro.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:33.520278+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.collisionrepairofjonesboro.com/",
+      "checkedAt": "2026-10-22T17:52:50.336Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "1423f5d2-f2ac-4794-b7a4-1926cbbec0c9",
+    "name": "Fox Plaza Automotive",
+    "niche": "Auto repair",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://www.foxplazatire.com/",
+    "phone": "9013635419",
+    "contactSource": "https://www.foxplazatire.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:34.987022+00:00",
+    "confidence": 0.9997,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.foxplazatire.com/",
+      "checkedAt": "2026-10-22T17:52:46.346Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "bf58637b-ae89-4338-9461-22dc6aeee703",
+    "name": "Gateway Tire & Service Center",
+    "niche": "Auto repair",
+    "city": "Atoka",
+    "state": "TN",
+    "website": "http://www.gatewaytire.com/locations/memphis/atoka/",
+    "phone": "9018374401",
+    "contactSource": "https://gatewaytire.com/locations/atoka-tn-29-wesley-reed-road/",
+    "catalogCheckedAt": "2026-10-22T17:49:20.357668+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://gatewaytire.com/locations/atoka-tn-29-wesley-reed-road/",
+      "checkedAt": "2026-10-22T17:52:46.759Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "70bc12a8-69fd-40b2-89e8-afbd279d570d",
+    "name": "Gateway Tire and Service Center",
+    "niche": "Auto repair",
+    "city": "Senatobia",
+    "state": "MS",
+    "website": "https://www.gatewaytireandservice.com/",
+    "phone": "6625628688",
+    "contactSource": "https://gatewaytire.com/locations/",
+    "catalogCheckedAt": "2026-10-22T17:51:37.269133+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://gatewaytire.com/",
+      "checkedAt": "2026-10-22T17:52:46.061Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "07b0de4e-a0e9-4d9b-bc60-f2ab6d7b18f3",
+    "name": "Gateway Tire and Service Center",
+    "niche": "Auto repair",
+    "city": "Jonesboro",
+    "state": "AR",
+    "website": "https://gatewaytire.com/locations/jonesboro-ar-2528-s-caraway-rd/",
+    "phone": "8709324523",
+    "contactSource": "https://gatewaytire.com/locations/jonesboro-ar-2528-s-caraway-rd/",
+    "catalogCheckedAt": "2026-10-22T17:49:29.079743+00:00",
+    "confidence": 0.9902,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://gatewaytire.com/locations/jonesboro-ar-2528-s-caraway-rd/",
+      "checkedAt": "2026-10-22T17:52:48.164Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "10bb52bb-1fc7-4c8a-b7f8-b2ad7fdd58f2",
+    "name": "Gateway Tire and Service Center",
+    "niche": "Auto repair",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://Www.gatewaytire.com/",
+    "phone": "9016838335",
+    "contactSource": "https://gatewaytire.com/locations/",
+    "catalogCheckedAt": "2026-10-22T17:51:25.907812+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://gatewaytire.com/",
+      "checkedAt": "2026-10-22T17:52:50.364Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "601b7d55-25bb-4e70-8381-50609301d83e",
+    "name": "Highway 70 Car Car",
+    "niche": "Auto repair",
+    "city": "Rossville",
+    "state": "TN",
+    "website": "https://www.hwy70carcare.com/",
+    "phone": "9012217377",
+    "contactSource": "https://www.hwy70carcare.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:53.836968+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.hwy70carcare.com/",
+      "checkedAt": "2026-10-22T17:52:51.758Z",
+      "issues": [
+        "No mobile viewport tag on the checked page"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "fb05c598-c541-43db-b2c1-bcf86f11ad59",
+    "name": "Highway 70 Car Care",
+    "niche": "Auto repair",
+    "city": "Moscow",
+    "state": "TN",
+    "website": "http://www.hwy70carcare.com/",
+    "phone": "9012093070",
+    "contactSource": "https://www.hwy70carcare.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:50.133905+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.hwy70carcare.com/",
+      "checkedAt": "2026-10-22T17:52:50.866Z",
+      "issues": [
+        "No mobile viewport tag on the checked page"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "dda642f5-2972-45f0-abf0-c40612ea7d6c",
+    "name": "Jay's Paint And Body",
+    "niche": "Auto repair",
+    "city": "Covington",
+    "state": "TN",
+    "website": "https://www.jayspaintandbody.net/",
+    "phone": "9014761263",
+    "contactSource": "https://www.jayspaintandbody.net/",
+    "catalogCheckedAt": "2026-10-22T17:49:23.624636+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.jayspaintandbody.net/",
+      "checkedAt": "2026-10-22T17:52:46.951Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "8baf12e6-3802-4258-8cd3-7c401fbd5611",
+    "name": "Meineke Car Care Center",
+    "niche": "Auto repair",
     "city": "Cordova",
     "state": "TN",
-    "website": "https://www.thehomepartnersrealty.com/",
-    "phone": "9013056047",
-    "contactSource": "https://www.thehomepartnersrealty.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:53.308431+00:00",
-    "confidence": 0.9722,
-    "release": "2026-09-23.1",
+    "website": "https://www.meineke.com/locations/tn/cordova-535/",
+    "phone": "9018815960",
+    "contactSource": "https://www.meineke.com/locations/tn/cordova-535/",
+    "catalogCheckedAt": "2026-10-22T17:49:24.591837+00:00",
+    "confidence": 0.9902,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://www.thehomepartnersrealty.com/",
-      "checkedAt": "2026-10-22T16:46:51.389Z",
+      "checkedUrl": "https://www.meineke.com/locations/tn/cordova-535/",
+      "checkedAt": "2026-10-22T17:52:46.729Z",
       "issues": [
-        "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "d7857336-eaa2-4010-833f-16ad7079cfa1",
-    "name": "901 Wings",
-    "niche": "Restaurants",
-    "city": "Southaven",
+    "id": "85924c9d-837e-4c29-817f-e3c16424c43e",
+    "name": "Meineke Car Care Center",
+    "niche": "Auto repair",
+    "city": "Horn Lake",
     "state": "MS",
-    "website": "http://Eatat901wings.com/",
-    "phone": "6623939016",
-    "contactSource": "https://www.eatat901wings.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:57.015069+00:00",
+    "website": "https://www.meineke.com/locations/ms/horn-lake-1668/",
+    "phone": "6622537114",
+    "contactSource": "https://www.meineke.com/locations/ms/horn-lake-1668/",
+    "catalogCheckedAt": "2026-10-22T17:49:28.056003+00:00",
     "confidence": 0.9902,
-    "release": "2026-09-23.1",
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://www.eatat901wings.com/",
-      "checkedAt": "2026-10-22T16:46:59.775Z",
+      "checkedUrl": "https://www.meineke.com/locations/ms/horn-lake-1668/",
+      "checkedAt": "2026-10-22T17:52:47.363Z",
       "issues": [
-        "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "d196c3a7-3a91-4d53-8f7b-b7dfc5da27d6",
-    "name": "Belly Acres Silo Square",
-    "niche": "Restaurants",
-    "city": "Southaven",
+    "id": "1c1b4499-568f-4272-a02f-cd43688f52c9",
+    "name": "Meineke Car Care Center",
+    "niche": "Auto repair",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://www.meineke.com/locations/tn/memphis-2958/?utm_source=google&utm_medium=organic&utm_campaign=gbp_website",
+    "phone": "9018818463",
+    "contactSource": "https://www.meineke.com/locations/tn/memphis-2958/?utm_source=google&utm_medium=organic&utm_campaign=gbp_website",
+    "catalogCheckedAt": "2026-10-22T17:49:37.961058+00:00",
+    "confidence": 0.9902,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.meineke.com/locations/tn/memphis-2958/?utm_source=google&utm_medium=organic&utm_campaign=gbp_website",
+      "checkedAt": "2026-10-22T17:52:50.081Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "8724019a-e085-48b6-bbbe-6047d79a46a4",
+    "name": "Mercedes Specialist Of Oxford",
+    "niche": "Auto repair",
+    "city": "Oxford",
     "state": "MS",
-    "website": "https://bellyacressilo.com/",
-    "phone": "6623622260",
-    "contactSource": "https://bellyacressilo.com/",
-    "catalogCheckedAt": "2026-10-21T16:50:21.443177+00:00",
-    "confidence": 0.9722,
-    "release": "2026-09-23.1",
-    "audit": {
-      "checkedUrl": "https://bellyacressilo.com/",
-      "checkedAt": "2026-10-22T16:46:57.918Z",
-      "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
-    }
-  },
-  {
-    "id": "a979af3b-5e55-4764-957f-9483ccd9460a",
-    "name": "Broadway Pizza East",
-    "niche": "Restaurants",
-    "city": "Memphis",
-    "state": "TN",
-    "website": "http://www.broadwaypizzamemphis.com/",
-    "phone": "9012071546",
-    "contactSource": "http://www.broadwaypizzamemphis.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:58.092369+00:00",
+    "website": "http://www.msoxford.com",
+    "phone": "6622366510",
+    "contactSource": "https://www.msoxford.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:53.260225+00:00",
     "confidence": 0.9902,
-    "release": "2026-09-23.1",
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "http://www.broadwaypizzamemphis.com/",
-      "checkedAt": "2026-10-22T16:46:52.145Z",
+      "checkedUrl": "https://www.msoxford.com/",
+      "checkedAt": "2026-10-22T17:52:54.208Z",
       "issues": [
-        "No mobile viewport tag on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "78d3e732-9bfe-47c3-a299-f9272ef224d0",
-    "name": "Ching's Hot Wings",
-    "niche": "Restaurants",
-    "city": "Memphis",
+    "id": "a72bde33-4267-4ae5-b133-36be3ccba4ba",
+    "name": "Mitchusson Tire Company",
+    "niche": "Auto repair",
+    "city": "Wynne",
+    "state": "AR",
+    "website": "http://mitchussontireco.com/",
+    "phone": "8702089914",
+    "contactSource": "https://www.mitchussontireco.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:57.822675+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.mitchussontireco.com/",
+      "checkedAt": "2026-10-22T17:52:53.044Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "c3871548-1967-4473-a5b6-7596d6225729",
+    "name": "Munford Tire",
+    "niche": "Auto repair",
+    "city": "Munford",
     "state": "TN",
-    "website": "http://chingshotwings.blogspot.com/",
-    "phone": "9017435545",
-    "contactSource": "http://chingshotwings.blogspot.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:59.477485+00:00",
+    "website": "http://www.munfordtire.com/",
+    "phone": "9018379632",
+    "contactSource": "https://www.munfordtire.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:50.103257+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.munfordtire.com/",
+      "checkedAt": "2026-10-22T17:52:50.844Z",
+      "issues": [
+        "No mobile viewport tag on the checked page"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "8c213a5f-0c09-4d7c-83be-382315417076",
+    "name": "Oxford Tire Inc.",
+    "niche": "Auto repair",
+    "city": "Oxford",
+    "state": "MS",
+    "website": "http://www.oxfordtirecenter.com",
+    "phone": "6622343602",
+    "contactSource": "https://www.oxfordtirecenter.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:53.069745+00:00",
     "confidence": 0.9902,
-    "release": "2026-09-23.1",
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "http://chingshotwings.blogspot.com/",
-      "checkedAt": "2026-10-22T16:46:52.247Z",
+      "checkedUrl": "https://www.oxfordtirecenter.com/",
+      "checkedAt": "2026-10-22T17:52:51.747Z",
       "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+        "No mobile viewport tag on the checked page"
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "0f7895a5-0136-4505-94ef-1f74d3bce814",
-    "name": "Ciao Baby",
-    "niche": "Restaurants",
-    "city": "Collierville",
-    "state": "TN",
-    "website": "http://www.ciaobabypizza.com/",
-    "phone": "9014577457",
-    "contactSource": "http://www.ciaobabypizza.com/index.html",
-    "catalogCheckedAt": "2026-10-21T16:50:29.210242+00:00",
-    "confidence": 0.9524,
-    "release": "2026-09-23.1",
-    "audit": {
-      "checkedUrl": "http://www.ciaobabypizza.com/index.html",
-      "checkedAt": "2026-10-22T16:46:50.548Z",
-      "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
-    }
-  },
-  {
-    "id": "70045fe8-0742-4364-8e24-1c37e855c273",
-    "name": "City Silo Table + Pantry",
-    "niche": "Restaurants",
-    "city": "Memphis",
-    "state": "TN",
-    "website": "https://www.thecitysilo.com",
-    "phone": "9017297687",
-    "contactSource": "https://www.thecitysilo.com",
-    "catalogCheckedAt": "2026-10-21T16:49:59.888438+00:00",
-    "confidence": 0.9902,
-    "release": "2026-09-23.1",
-    "audit": {
-      "checkedUrl": "https://www.thecitysilo.com/",
-      "checkedAt": "2026-10-22T16:46:52.399Z",
-      "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
-    }
-  },
-  {
-    "id": "ca8fcf51-9798-4927-a00b-826726c6d6f5",
-    "name": "Dino's Grill",
-    "niche": "Restaurants",
-    "city": "Memphis",
-    "state": "TN",
-    "website": "http://dinosgrill.com/",
-    "phone": "9012789127",
-    "contactSource": "https://dinosgrill.com/",
-    "catalogCheckedAt": "2026-10-21T16:50:03.172633+00:00",
-    "confidence": 0.9902,
-    "release": "2026-09-23.1",
-    "audit": {
-      "checkedUrl": "https://dinosgrill.com/",
-      "checkedAt": "2026-10-22T16:46:55.405Z",
-      "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
-    }
-  },
-  {
-    "id": "cc0f7c4f-99a3-42d3-bcd3-cc3d1bf87132",
-    "name": "High Point Pizza",
-    "niche": "Restaurants",
-    "city": "Memphis",
-    "state": "TN",
-    "website": "http://www.901highpointpizza.com/",
-    "phone": "9014523339",
-    "contactSource": "http://901highpointpizza.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:52.454980+00:00",
-    "confidence": 0.9965,
-    "release": "2026-09-23.1",
-    "audit": {
-      "checkedUrl": "http://901highpointpizza.com/",
-      "checkedAt": "2026-10-22T16:46:51.517Z",
-      "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
-    }
-  },
-  {
-    "id": "aa6338dd-793f-453e-a2e7-b97828214749",
-    "name": "Los Comales Mexican Bar & Grill",
-    "niche": "Restaurants",
-    "city": "Memphis",
-    "state": "TN",
-    "website": "https://www.loscomalesmemphis.com/",
-    "phone": "9014408393",
-    "contactSource": "https://loscomalesmemphis.com/locations/",
-    "catalogCheckedAt": "2026-10-21T16:52:15.561848+00:00",
-    "confidence": 0.9928,
-    "release": "2026-09-23.1",
-    "audit": {
-      "checkedUrl": "https://loscomalesmemphis.com/",
-      "checkedAt": "2026-10-22T16:46:56.592Z",
-      "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
-    }
-  },
-  {
-    "id": "1b8b65a5-0d1f-47a3-b821-ea4052cc87aa",
-    "name": "Maciel's Tortas and Tacos",
-    "niche": "Restaurants",
-    "city": "Memphis",
-    "state": "TN",
-    "website": "http://macielsmidtown.com",
-    "phone": "9014435346",
-    "contactSource": "https://macielsmidtown.com/contact/",
-    "catalogCheckedAt": "2026-10-21T16:52:23.840664+00:00",
-    "confidence": 0.9909,
-    "release": "2026-09-23.1",
-    "audit": {
-      "checkedUrl": "https://macielsmidtown.com/",
-      "checkedAt": "2026-10-22T16:46:53.679Z",
-      "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
-    }
-  },
-  {
-    "id": "a7f72162-97e1-4758-a4b3-48db8b535ea1",
-    "name": "Mrs. Hippie Eats",
-    "niche": "Restaurants",
+    "id": "4e2b8afc-9d73-4547-86de-a76ad8b97538",
+    "name": "Pounders Repair",
+    "niche": "Auto repair",
     "city": "Hernando",
     "state": "MS",
-    "website": "http://Mrshippieeats.com/",
-    "phone": "6624699276",
-    "contactSource": "https://www.mrshippieeats.com/",
-    "catalogCheckedAt": "2026-10-21T16:50:13.493496+00:00",
-    "confidence": 0.9867,
-    "release": "2026-09-23.1",
+    "website": "http://www.poundersrepair.com/",
+    "phone": "6622988287",
+    "contactSource": "https://www.poundersrepair.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:26.102957+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://www.mrshippieeats.com/",
-      "checkedAt": "2026-10-22T16:46:51.158Z",
+      "checkedUrl": "https://www.poundersrepair.com/",
+      "checkedAt": "2026-10-22T17:52:47.177Z",
       "issues": [
-        "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "05227386-3aea-44b1-ac86-83d57433e6e8",
-    "name": "Napa Cafe",
-    "niche": "Restaurants",
-    "city": "Memphis",
-    "state": "TN",
-    "website": "http://www.napacafe.com/",
-    "phone": "9016830441",
-    "contactSource": "https://www.napacafe.com/",
-    "catalogCheckedAt": "2026-10-21T16:50:09.008766+00:00",
-    "confidence": 0.9902,
-    "release": "2026-09-23.1",
+    "id": "c0710e43-80ea-44cd-a99a-a95c1d63d03f",
+    "name": "Pro Cision Collision",
+    "niche": "Auto repair",
+    "city": "Pontotoc",
+    "state": "MS",
+    "website": "http://www.totalcollisionrepair.net/",
+    "phone": "6624889080",
+    "contactSource": "http://www.totalcollisionrepair.net/",
+    "catalogCheckedAt": "2026-10-22T17:49:53.599153+00:00",
+    "confidence": 0.9975,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://www.napacafe.com/",
-      "checkedAt": "2026-10-22T16:46:56.036Z",
+      "checkedUrl": "http://www.totalcollisionrepair.net/",
+      "checkedAt": "2026-10-22T17:52:51.838Z",
       "issues": [
-        "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "46f259f8-aba3-4f98-99b4-a951e766e333",
-    "name": "OB Pizza Company",
-    "niche": "Restaurants",
+    "id": "aa77307d-7ceb-433d-88c4-d74878bba378",
+    "name": "Raleigh Tire Service",
+    "niche": "Auto repair",
     "city": "Olive Branch",
     "state": "MS",
-    "website": "http://ssburgers.com",
-    "phone": "6629322999",
-    "contactSource": "https://ssburgers.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:55.145670+00:00",
-    "confidence": 0.992,
-    "release": "2026-09-23.1",
+    "website": "http://www.raleightire.com/",
+    "phone": "6628909545",
+    "contactSource": "https://www.raleightire.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:51.452501+00:00",
+    "confidence": 0.9902,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://ssburgers.com/",
-      "checkedAt": "2026-10-22T16:46:57.062Z",
+      "checkedUrl": "https://www.raleightire.com/",
+      "checkedAt": "2026-10-22T17:52:46.120Z",
       "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+        "No mobile viewport tag on the checked page"
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "2d2d2b94-b6d3-48eb-ade4-36a0fea4b5ae",
-    "name": "Shroomlicious Meals",
-    "niche": "Restaurants",
+    "id": "437022b7-7209-4597-a265-c2ff738478f6",
+    "name": "RAW Wheels and Tires",
+    "niche": "Auto repair",
     "city": "Memphis",
     "state": "TN",
-    "website": "http://www.shroomliciousmeals.com",
-    "phone": "9012058413",
-    "contactSource": "https://www.shroomliciousmeals.com/",
-    "catalogCheckedAt": "2026-10-21T16:50:32.272873+00:00",
+    "website": "https://locations.rentawheel.com/tn/memphis/2130-covington-pike",
+    "phone": "9015523001",
+    "contactSource": "https://www.rentawheel.com/locations/tn/memphis/2130-covington-pike",
+    "catalogCheckedAt": "2026-10-22T17:49:48.443372+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.rentawheel.com/locations/tn/memphis/2130-covington-pike",
+      "checkedAt": "2026-10-22T17:52:51.095Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "7877f030-ec1c-432d-b2e7-c3ef7068e185",
+    "name": "Southaven Car Care",
+    "niche": "Auto repair",
+    "city": "Southaven",
+    "state": "MS",
+    "website": "http://southaven-carcare.com",
+    "phone": "6623934468",
+    "contactSource": "https://www.mooreautomotivems.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:59.590741+00:00",
+    "confidence": 0.9902,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.mooreautomotivems.com/",
+      "checkedAt": "2026-10-22T17:52:52.358Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "6120bdb1-12e5-4609-b638-0a05c81e04ff",
+    "name": "The Auto Clinic of Jonesboro",
+    "niche": "Auto repair",
+    "city": "Jonesboro",
+    "state": "AR",
+    "website": "http://www.Autoclinicjonesboro.com/",
+    "phone": "8702039763",
+    "contactSource": "https://www.autoclinicjonesboro.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:29.906521+00:00",
+    "confidence": 0.9798,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.autoclinicjonesboro.com/",
+      "checkedAt": "2026-10-22T17:52:47.889Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "e1fa1221-6093-4662-95b1-64a729d43f8a",
+    "name": "The Shop Of Memphis",
+    "niche": "Auto repair",
+    "city": "Cordova",
+    "state": "TN",
+    "website": "http://www.shopofmemphis.com",
+    "phone": "9017435007",
+    "contactSource": "http://theshopofmemphis.com",
+    "catalogCheckedAt": "2026-10-22T17:49:21.803478+00:00",
+    "confidence": 0.9998,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "http://theshopofmemphis.com/",
+      "checkedAt": "2026-10-22T17:52:46.512Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "0c650b66-4a20-4e2c-a256-ad6740380b7e",
+    "name": "Trumann Auto Body and Sales",
+    "niche": "Auto repair",
+    "city": "Trumann",
+    "state": "AR",
+    "website": "http://trumannauto.com/",
+    "phone": "8708829387",
+    "contactSource": "https://www.trumannauto.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:56.283543+00:00",
+    "confidence": 0.9678,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.trumannauto.com/",
+      "checkedAt": "2026-10-22T17:52:52.393Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "cdeb7caa-77b0-45b2-8364-e9d0d4875be6",
+    "name": "Winchester Tire and Alignment",
+    "niche": "Auto repair",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.winchestertire.com/",
+    "phone": "9013455484",
+    "contactSource": "http://www.winchestertire.com/",
+    "catalogCheckedAt": "2026-10-22T17:49:34.736491+00:00",
+    "confidence": 1,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "http://www.winchestertire.com/",
+      "checkedAt": "2026-10-22T17:52:49.095Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "bca53ef9-f9db-4ead-9f0d-ce32ba86027b",
+    "name": "CGS Exterior Services",
+    "niche": "Cleaning services",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://cgsservicestn.com/",
+    "phone": "9015709845",
+    "contactSource": "https://cgsservicestn.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:00.079053+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://cgsservicestn.com/",
+      "checkedAt": "2026-10-22T17:52:54.462Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "8de04a90-4564-4621-a3b3-d9b8b162af30",
+    "name": "Chem-Dry of Shelby County",
+    "niche": "Cleaning services",
+    "city": "Lakeland",
+    "state": "TN",
+    "website": "https://chem-dry.net/shelbytn",
+    "phone": "9013823339",
+    "contactSource": "https://chem-dry.net/shelbytn",
+    "catalogCheckedAt": "2026-10-22T17:49:59.169780+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://chem-dry.net/shelbytn",
+      "checkedAt": "2026-10-22T17:52:53.994Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "19547b4c-cae5-4088-af2c-208e4053178a",
+    "name": "The Memphis Cleaning Company",
+    "niche": "Cleaning services",
+    "city": "Millington",
+    "state": "TN",
+    "website": "http://Www.thememphiscleaningcompany.com/",
+    "phone": "9014273966",
+    "contactSource": "https://thememphiscleaningcompany.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:00.800022+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://thememphiscleaningcompany.com/",
+      "checkedAt": "2026-10-22T17:52:54.653Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "a09348f8-6e5f-4e99-ace8-3f0a674fe0c3",
+    "name": "Good Fruit Electric",
+    "niche": "Electricians",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.goodfruitgrows.com/",
+    "phone": "9012602340",
+    "contactSource": "http://www.goodfruitgrows.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:03.886403+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "http://www.goodfruitgrows.com/",
+      "checkedAt": "2026-10-22T17:52:55.637Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "ec4dcf20-4ae9-4254-a29e-2db6b83bceda",
+    "name": "Higgins Electric Lc",
+    "niche": "Electricians",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://higginselectricmemphis.com/",
+    "phone": "9013819898",
+    "contactSource": "https://www.higginselectricmemphis.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:03.969887+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.higginselectricmemphis.com/",
+      "checkedAt": "2026-10-22T17:52:55.556Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "cb84f400-480e-4496-896b-a6940e2e9ee7",
+    "name": "Schwartz Electric Co. Inc.",
+    "niche": "Electricians",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://www.schwartzelectric.co",
+    "phone": "9012720464",
+    "contactSource": "https://schwartzelectric.co/",
+    "catalogCheckedAt": "2026-10-22T17:50:08.769776+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://schwartzelectric.co/",
+      "checkedAt": "2026-10-22T17:52:58.181Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "e78c4e52-ac5d-42ae-99f9-6836ad713ba7",
+    "name": "Whitfield Electric",
+    "niche": "Electricians",
+    "city": "Hernando",
+    "state": "MS",
+    "website": "http://www.whitfieldelectric.com/",
+    "phone": "6624294542",
+    "contactSource": "https://www.whitfieldelectric.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:03.392123+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.whitfieldelectric.com/",
+      "checkedAt": "2026-10-22T17:52:55.329Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "b9073e0f-ca8c-4f3e-9358-3e7c2f06f34b",
+    "name": "Bentley Overhead Door",
+    "niche": "Garage doors",
+    "city": "Marion",
+    "state": "AR",
+    "website": "http://www.bentleyoverheaddoor.com/",
+    "phone": "8707332216",
+    "contactSource": "https://bentleyoverheaddoor.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:06.437976+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://bentleyoverheaddoor.com/",
+      "checkedAt": "2026-10-22T17:52:56.648Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "b8762fa5-ff06-4b20-b54b-80dc07eb8c11",
+    "name": "Best Care Plumbing, Heating And Air",
+    "niche": "HVAC",
+    "city": "Bartlett",
+    "state": "TN",
+    "website": "https://bestcarehomeservices.com/",
+    "phone": "9016241401",
+    "contactSource": "https://bestcarehomeservices.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:07.821899+00:00",
+    "confidence": 0.9743,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://bestcarehomeservices.com/",
+      "checkedAt": "2026-10-22T17:52:56.546Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "57fe4a3d-9c9c-4001-b7c6-10c82ca066a7",
+    "name": "Brasco Service, Inc.",
+    "niche": "HVAC",
+    "city": "Jonesboro",
+    "state": "AR",
+    "website": "http://www.brascoservice.com",
+    "phone": "8709327483",
+    "contactSource": "https://brascoservice.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:10.836654+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://brascoservice.com/",
+      "checkedAt": "2026-10-22T17:52:57.810Z",
+      "issues": [
+        "No mobile viewport tag on the checked page"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "2aa73ed2-9251-4db2-abc8-e6aea2395791",
+    "name": "Elite Air Care Memphis",
+    "niche": "HVAC",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://eliteaircaretn.com/",
+    "phone": "9015123616",
+    "contactSource": "https://eliteaircaretn.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:12.421708+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://eliteaircaretn.com/",
+      "checkedAt": "2026-10-22T17:52:58.061Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "f327c70d-19ec-440d-a4df-2497d8508e50",
+    "name": "Farmer's Heating and Air",
+    "niche": "HVAC",
+    "city": "Hernando",
+    "state": "MS",
+    "website": "http://farmersoncall.com/",
+    "phone": "6624694081",
+    "contactSource": "https://farmersoncall.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:10.200917+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://farmersoncall.com/",
+      "checkedAt": "2026-10-22T17:52:57.482Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "79c44c72-a55b-4444-b9d5-776f6fe3c9b6",
+    "name": "Glass Air & Heat",
+    "niche": "HVAC",
+    "city": "Ripley",
+    "state": "TN",
+    "website": "http://www.glassairandheat.com",
+    "phone": "7316357635",
+    "contactSource": "https://glassairandheat.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:18.841326+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://glassairandheat.com/",
+      "checkedAt": "2026-10-22T17:53:00.603Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "1c5884c1-86ae-4e06-9bba-8d810753e11f",
+    "name": "MaxAir Heating and Cooling",
+    "niche": "HVAC",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.getmaxair.com/",
+    "phone": "9013341921",
+    "contactSource": "https://www.getmaxair.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:13.070218+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.getmaxair.com/",
+      "checkedAt": "2026-10-22T17:52:58.375Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "87f45ef7-e438-4d2d-a52d-1b4650067372",
+    "name": "Richards Heating & Air",
+    "niche": "HVAC",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://richardshvac.net/",
+    "phone": "9013867000",
+    "contactSource": "https://www.richardshvac.net/",
+    "catalogCheckedAt": "2026-10-22T17:50:16.170232+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.richardshvac.net/",
+      "checkedAt": "2026-10-22T17:52:58.821Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "b8c23426-7935-4798-be27-1f5bc9d1de0a",
+    "name": "Jeffery's lawn service",
+    "niche": "Landscaping & lawn care",
+    "city": "Byhalia",
+    "state": "MS",
+    "website": "http://www.jefferylawnservice.com/",
+    "phone": "6624205082",
+    "contactSource": "https://www.jefferylawnservice.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:19.693661+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.jefferylawnservice.com/",
+      "checkedAt": "2026-10-22T17:53:00.895Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "177c9158-5338-40e5-bcb5-f4f43009e6a6",
+    "name": "Mejia Tree Service",
+    "niche": "Landscaping & lawn care",
+    "city": "Bartlett",
+    "state": "TN",
+    "website": "https://www.mejiatreeservice.com/index.php",
+    "phone": "9015179914",
+    "contactSource": "https://www.mejiatreeservice.com/index.php",
+    "catalogCheckedAt": "2026-10-22T17:50:17.728969+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.mejiatreeservice.com/index.php",
+      "checkedAt": "2026-10-22T17:53:00.299Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "a712e0e1-892f-4cef-9163-23a86e5d90d4",
+    "name": "S3 Pro Services",
+    "niche": "Landscaping & lawn care",
+    "city": "Arlington",
+    "state": "TN",
+    "website": "https://s3proservices.com/",
+    "phone": "9014683205",
+    "contactSource": "https://s3proservices.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:16.921149+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://s3proservices.com/",
+      "checkedAt": "2026-10-22T17:53:00.549Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "2d3f172b-2cb3-4f18-b9b5-ec5d8be9815f",
+    "name": "Serenity Lawn and Garden",
+    "niche": "Landscaping & lawn care",
+    "city": "Eads",
+    "state": "TN",
+    "website": "http://serenitylawnpros.com/",
+    "phone": "9012147928",
+    "contactSource": "https://serenitylawnpros.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:18.300762+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://serenitylawnpros.com/",
+      "checkedAt": "2026-10-22T17:53:00.861Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "a8b07f92-66e8-4cf0-8e0f-09d8c32e4f7d",
+    "name": "SiteOne Landscape Supply",
+    "niche": "Landscaping & lawn care",
+    "city": "Arlington",
+    "state": "TN",
+    "website": "https://www.siteone.com/en/store/358",
+    "phone": "9018678733",
+    "contactSource": "https://www.siteone.com/en/store/358",
+    "catalogCheckedAt": "2026-10-22T17:50:17.708281+00:00",
+    "confidence": 0.9998,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.siteone.com/en/store/358",
+      "checkedAt": "2026-10-22T17:53:00.859Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "8e6b39ec-e4f2-4963-9d5a-d7eb68830845",
+    "name": "U.S. Lawns - Memphis East",
+    "niche": "Landscaping & lawn care",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://uslawns.com/locations/tn/east-memphis/",
+    "phone": "9016096262",
+    "contactSource": "https://uslawns.com/locations/tn/east-memphis/",
+    "catalogCheckedAt": "2026-10-22T17:50:21.493722+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://uslawns.com/locations/tn/east-memphis/",
+      "checkedAt": "2026-10-22T17:53:01.891Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "3a8c6adf-2601-4e5a-8ed7-9e50fb09c209",
+    "name": "US Lawns",
+    "niche": "Landscaping & lawn care",
+    "city": "New Albany",
+    "state": "MS",
+    "website": "https://uslawns.com/locations/ms/northeast-mississippi/",
+    "phone": "6625347447",
+    "contactSource": "https://uslawns.com/locations/ms/northeast-mississippi/",
+    "catalogCheckedAt": "2026-10-22T17:50:21.986468+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://uslawns.com/locations/ms/northeast-mississippi/",
+      "checkedAt": "2026-10-22T17:53:02.021Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "10eca433-6586-404b-ba56-1976ca92b509",
+    "name": "Holliday Exterminating Co Inc",
+    "niche": "Pest control",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.hollidayexterminating.com",
+    "phone": "9017442840",
+    "contactSource": "https://hollidayexterminating.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:27.357627+00:00",
     "confidence": 0.95,
-    "release": "2026-09-23.1",
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://www.shroomliciousmeals.com/",
-      "checkedAt": "2026-10-22T16:46:59.197Z",
+      "checkedUrl": "https://hollidayexterminating.com/",
+      "checkedAt": "2026-10-22T17:53:04.746Z",
       "issues": [
-        "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "368dd0d8-5f1a-45d1-81e5-c41b31dabfd3",
-    "name": "SideStreet Burgers",
-    "niche": "Restaurants",
-    "city": "Olive Branch",
+    "id": "ec6d2e5e-746a-4b78-bc0c-5d40e653cad3",
+    "name": "James Pest Control Services",
+    "niche": "Pest control",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://jamespestmanagement.com/",
+    "phone": "9013672007",
+    "contactSource": "https://jamespestmanagement.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:28.086580+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://jamespestmanagement.com/",
+      "checkedAt": "2026-10-22T17:53:05.176Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "38ca8e51-f41d-4817-bbaf-3926aceb1257",
+    "name": "Superior Termite & Pest Control",
+    "niche": "Pest control",
+    "city": "Jonesboro",
+    "state": "AR",
+    "website": "https://thesuperiorpestcontrol.com",
+    "phone": "8709336633",
+    "contactSource": "https://thesuperiorpestcontrol.com",
+    "catalogCheckedAt": "2026-10-22T17:50:27.669888+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://thesuperiorpestcontrol.com/",
+      "checkedAt": "2026-10-22T17:53:05.282Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "b991c20e-b25a-499a-8660-8b0c942bbede",
+    "name": "All Bright Tub Refinishing",
+    "niche": "Remodeling & contractors",
+    "city": "Lakeland",
+    "state": "TN",
+    "website": "http://www.allbrighttubs.com/",
+    "phone": "9012170686",
+    "contactSource": "https://www.allbrighttubs.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:38.537397+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.allbrighttubs.com/",
+      "checkedAt": "2026-10-22T17:53:09.779Z",
+      "issues": [
+        "No mobile viewport tag on the checked page"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "65f6edaf-359f-4fa2-9e26-e9be865fde83",
+    "name": "Chris-hill Construction Company, Llc",
+    "niche": "Remodeling & contractors",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://www.chrishillconstruction.com",
+    "phone": "9017676312",
+    "contactSource": "https://www.chrishillconstruction.com",
+    "catalogCheckedAt": "2026-10-22T17:50:37.828299+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.chrishillconstruction.com/",
+      "checkedAt": "2026-10-22T17:53:08.222Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "d1427862-17b5-4c03-b5fb-9f3a8cbf09ef",
+    "name": "Grinder Haizlip Construction General Contractors",
+    "niche": "Remodeling & contractors",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.grinderhaizlip.com",
+    "phone": "9013771000",
+    "contactSource": "https://grinderhaizlip.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:40.823028+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://grinderhaizlip.com/",
+      "checkedAt": "2026-10-22T17:53:09.287Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "5f8fb18d-8496-4198-bcba-6ece927b0066",
+    "name": "Mid-south Independent Electrical Contractors Association",
+    "niche": "Remodeling & contractors",
+    "city": "Bartlett",
+    "state": "TN",
+    "website": "https://midsouthiec.com",
+    "phone": "9016823546",
+    "contactSource": "https://www.midsouthiec.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:32.361563+00:00",
+    "confidence": 0.9425,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.midsouthiec.com/",
+      "checkedAt": "2026-10-22T17:53:06.001Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "01e34889-9ff9-488b-aa7c-4a874ea07ee9",
+    "name": "Mysafe Place Tornado Shelters",
+    "niche": "Remodeling & contractors",
+    "city": "Jonesboro",
+    "state": "AR",
+    "website": "http://www.mysafeplacetornadoshelters.com/",
+    "phone": "8705302831",
+    "contactSource": "https://www.mysafeplacetornadoshelters.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:35.887190+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.mysafeplacetornadoshelters.com/",
+      "checkedAt": "2026-10-22T17:53:07.224Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "c13f3212-88e4-45f7-8924-16259e18b664",
+    "name": "Professional Painting Service",
+    "niche": "Remodeling & contractors",
+    "city": "Senatobia",
     "state": "MS",
-    "website": "http://ssburgers.com/",
-    "phone": "9015964749",
-    "contactSource": "https://ssburgers.com/",
-    "catalogCheckedAt": "2026-10-21T16:50:14.877313+00:00",
-    "confidence": 0.9822,
-    "release": "2026-09-23.1",
+    "website": "http://www.ppspainters.com/",
+    "phone": "6625626563",
+    "contactSource": "https://www.ppspainters.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:44.993547+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://ssburgers.com/",
-      "checkedAt": "2026-10-22T16:46:57.150Z",
+      "checkedUrl": "https://www.ppspainters.com/",
+      "checkedAt": "2026-10-22T17:53:10.836Z",
       "issues": [
-        "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "8317406c-c8b8-446c-82e2-d28ca2f45d14",
-    "name": "Slice of Soul Pizza Lounge",
-    "niche": "Restaurants",
-    "city": "Memphis",
+    "id": "d11ff85c-9622-47aa-864c-61f05970898c",
+    "name": "Puida Builders LLC",
+    "niche": "Remodeling & contractors",
+    "city": "Collierville",
     "state": "TN",
-    "website": "http://www.sospizzalounge.com/",
-    "phone": "9015092087",
-    "contactSource": "https://haamacon.com/sospizzalounge/",
-    "catalogCheckedAt": "2026-10-21T16:50:15.331661+00:00",
-    "confidence": 0.9901,
-    "release": "2026-09-23.1",
+    "website": "http://www.puidabuilders.com/",
+    "phone": "9016109954",
+    "contactSource": "https://www.puidabuilders.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:36.272560+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://haamacon.com/sospizzalounge/",
-      "checkedAt": "2026-10-22T16:46:57.785Z",
+      "checkedUrl": "https://www.puidabuilders.com/",
+      "checkedAt": "2026-10-22T17:53:08.757Z",
       "issues": [
-        "No search description on the checked page",
-        "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+        "Missing or generic page title"
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "03bdb70a-97b5-4a02-873e-dff138cbd735",
-    "name": "The Blue Monkey",
-    "niche": "Restaurants",
-    "city": "Memphis",
+    "id": "29ea888a-d7fb-435c-bcbd-763d234b72db",
+    "name": "River City Pros, LLC",
+    "niche": "Remodeling & contractors",
+    "city": "Collierville",
     "state": "TN",
-    "website": "https://www.bluemonkeymemphis.com",
-    "phone": "9015276665",
-    "contactSource": "https://bluemonkeymemphis.com/contact.php",
-    "catalogCheckedAt": "2026-10-21T16:52:50.576771+00:00",
-    "confidence": 0.9722,
-    "release": "2026-09-23.1",
+    "website": "http://www.rivercitypros.com/schedule-appointment",
+    "phone": "9017070355",
+    "contactSource": "https://rivercitypros.com/contact-us/",
+    "catalogCheckedAt": "2026-10-22T17:52:10.437932+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://bluemonkeymemphis.com/",
-      "checkedAt": "2026-10-22T16:46:55.732Z",
+      "checkedUrl": "https://rivercitypros.com/schedule-appointment/",
+      "checkedAt": "2026-10-22T17:53:06.489Z",
       "issues": [
-        "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "1c9fedd0-d67c-478b-b1ef-5659b4c1c11f",
-    "name": "The Wing Guru",
-    "niche": "Restaurants",
-    "city": "Memphis",
+    "id": "701eb25a-3fa8-48b3-a8d5-dde1db3f8c67",
+    "name": "Affordable Roofing",
+    "niche": "Roofing",
+    "city": "Oakland",
     "state": "TN",
-    "website": "http://www.thewingguru.com/",
-    "phone": "9012094987",
-    "contactSource": "https://thewingguru.com/",
-    "catalogCheckedAt": "2026-10-21T16:50:24.402061+00:00",
-    "confidence": 0.9607,
-    "release": "2026-09-23.1",
+    "website": "http://affordableroofingtn.com/",
+    "phone": "9012996543",
+    "contactSource": "https://affordableroofingtn.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:57.130501+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://thewingguru.com/",
-      "checkedAt": "2026-10-22T16:46:56.772Z",
+      "checkedUrl": "https://affordableroofingtn.com/",
+      "checkedAt": "2026-10-22T17:53:13.454Z",
       "issues": [
-        "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "cbde5c2d-77a9-4638-b351-8530ea0a7381",
-    "name": "Uncle Lou's Fried Chicken",
-    "niche": "Restaurants",
-    "city": "Memphis",
+    "id": "58b647f2-f071-40c1-ab75-4002e3bdf5d9",
+    "name": "CMT Construction LLC",
+    "niche": "Roofing",
+    "city": "Moscow",
     "state": "TN",
-    "website": "https://www.unclelousfriedchicken.com/",
-    "phone": "9013322367",
-    "contactSource": "https://www.unclelousfriedchicken.com/",
-    "catalogCheckedAt": "2026-10-21T16:49:55.262337+00:00",
-    "confidence": 0.9912,
-    "release": "2026-09-23.1",
+    "website": "https://www.cmtbuild.com/",
+    "phone": "9012093167",
+    "contactSource": "https://cmtbuild.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:55.579199+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://www.unclelousfriedchicken.com/",
-      "checkedAt": "2026-10-22T16:46:51.649Z",
+      "checkedUrl": "https://cmtbuild.com/",
+      "checkedAt": "2026-10-22T17:53:13.888Z",
       "issues": [
-        "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "One visible issue"
     }
   },
   {
-    "id": "a6206ca5-4221-4325-b5fb-c7e059731402",
-    "name": "Utopia Animal Hospital",
-    "niche": "Veterinarians",
+    "id": "3eaad174-f20d-4e00-badc-83ae7caae4be",
+    "name": "Commercial Roofing",
+    "niche": "Roofing",
     "city": "Memphis",
     "state": "TN",
-    "website": "http://www.utopiaanimalhospital.com/",
-    "phone": "9017468758",
-    "contactSource": "https://utopiaanimalhospital.com/",
-    "catalogCheckedAt": "2026-10-21T16:50:49.179530+00:00",
-    "confidence": 0.9902,
-    "release": "2026-09-23.1",
+    "website": "https://commercialroofingmidsouth.com",
+    "phone": "9017294444",
+    "contactSource": "https://www.commercialroofingmidsouth.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:57.845701+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
     "audit": {
-      "checkedUrl": "https://utopiaanimalhospital.com/",
-      "checkedAt": "2026-10-22T16:47:03.898Z",
+      "checkedUrl": "https://www.commercialroofingmidsouth.com/",
+      "checkedAt": "2026-10-22T17:53:18.406Z",
       "issues": [
-        "No search description on the checked page",
         "No dedicated contact, booking or quote link found in fetched HTML"
-      ]
+      ],
+      "priority": "One visible issue"
+    }
+  },
+  {
+    "id": "5f5bc970-84ab-4a58-a2ae-dcaa9180f799",
+    "name": "Jessie Bryant Roofing",
+    "niche": "Roofing",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.jbr-memphis.com",
+    "phone": "9013989799",
+    "contactSource": "https://www.jbr-memphis.com/",
+    "catalogCheckedAt": "2026-10-22T17:50:52.106092+00:00",
+    "confidence": 0.9199,
+    "release": "2026-10-21.0",
+    "audit": {
+      "checkedUrl": "https://www.jbr-memphis.com/",
+      "checkedAt": "2026-10-22T17:53:12.684Z",
+      "issues": [
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ],
+      "priority": "One visible issue"
     }
   }
 ]

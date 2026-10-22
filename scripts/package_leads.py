@@ -1,4 +1,4 @@
-import json
+import json, csv
 from collections import Counter
 from urllib.parse import urlparse
 from pathlib import Path
@@ -22,5 +22,10 @@ for id,r in checks.items():
 output.sort(key=lambda x:(x['niche'],x['city'],-x['confidence'],x['name']))
 target=Path('app/data/leads.json')
 target.write_text(json.dumps(output,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+with Path('public/targeted-verified-catalog.csv').open('w',newline='',encoding='utf-8-sig') as file:
+ writer=csv.writer(file)
+ writer.writerow(['name','niche','city','state','website','published_phone','contact_source','checked_at','source_release'])
+ for row in output:
+  writer.writerow([row['name'],row['niche'],row['city'],row['state'],row['website'],"'"+row['phone'],row['contactSource'],row['catalogCheckedAt'],row['release']])
 print('packaged',len(output),'niches',Counter(x['niche'] for x in output).most_common(),'bytes',target.stat().st_size)
 

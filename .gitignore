@@ -5,3 +5,5 @@ node_modules/
 *.tsbuildinfo
 
 work/
+__pycache__/
+*.pyc
