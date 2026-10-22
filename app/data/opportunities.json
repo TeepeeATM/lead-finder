@@ -1,0 +1,675 @@
+[
+  {
+    "id": "412f497b-db4f-4eee-9912-3b148d0596db",
+    "name": "Acre Restaurant",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.acrememphis.com/",
+    "phone": "9018182273",
+    "contactSource": "http://www.acrememphis.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:57.476173+00:00",
+    "confidence": 0.9902,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "http://www.acrememphis.com/",
+      "checkedAt": "2026-10-22T16:46:51.985Z",
+      "issues": [
+        "No mobile viewport tag on the checked page",
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "c55b4e0f-44b6-4631-8600-938e556f7427",
+    "name": "Doug's Automotive",
+    "niche": "Auto repair",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://dougsautoshop.com/",
+    "phone": "9017919169",
+    "contactSource": "https://dougsautoshop.com/",
+    "catalogCheckedAt": "2026-10-21T16:48:43.442542+00:00",
+    "confidence": 0.9999,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://dougsautoshop.com/",
+      "checkedAt": "2026-10-22T16:46:29.855Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "9370e956-e368-4995-9593-c5d0f6cd8e5a",
+    "name": "Fringe Hair Co.",
+    "niche": "Beauty salons",
+    "city": "Germantown",
+    "state": "TN",
+    "website": "http://www.fringehairco.com/",
+    "phone": "9017511108",
+    "contactSource": "https://fringehairco.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:00.298286+00:00",
+    "confidence": 0.9902,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://fringehairco.com/",
+      "checkedAt": "2026-10-22T16:46:33.321Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "e51af476-c3d9-4247-ac4c-9147a31dc532",
+    "name": "Crazy Gander Coffee Company",
+    "niche": "Coffee shops",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://crazygander.com/",
+    "phone": "9015523852",
+    "contactSource": "https://www.crazygander.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:11.346536+00:00",
+    "confidence": 0.9902,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://www.crazygander.com/",
+      "checkedAt": "2026-10-22T16:46:35.977Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "b27f7d10-bdb8-4326-8b8f-9a2f81ed6abd",
+    "name": "Mario E Alfonso, DDS",
+    "niche": "Dentists",
+    "city": "Southaven",
+    "state": "MS",
+    "website": "http://marioalfonsodds.com/",
+    "phone": "6623493038",
+    "contactSource": "https://www.marioalfonsodds.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:15.096573+00:00",
+    "confidence": 0.9991,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://www.marioalfonsodds.com/",
+      "checkedAt": "2026-10-22T16:46:38.288Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "e03e3e18-7060-4de1-be49-560145826403",
+    "name": "Arch 2 Arch",
+    "niche": "Hair salons",
+    "city": "Bartlett",
+    "state": "TN",
+    "website": "https://a2aspasalon.com/locations",
+    "phone": "8882242724",
+    "contactSource": "https://a2aspasalon.com/locations/",
+    "catalogCheckedAt": "2026-10-21T16:49:34.442805+00:00",
+    "confidence": 0.986,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://a2aspasalon.com/locations/",
+      "checkedAt": "2026-10-22T16:46:45.405Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "c1c55661-5ea6-4025-8c24-8f0a2dae1972",
+    "name": "Dr. S.W. Hora",
+    "niche": "Optometrists",
+    "city": "Collierville",
+    "state": "TN",
+    "website": "http://www.swhoraod.com/",
+    "phone": "9018531420",
+    "contactSource": "http://www.swhoraod.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:45.510904+00:00",
+    "confidence": 0.9714,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "http://www.swhoraod.com/",
+      "checkedAt": "2026-10-22T16:46:46.393Z",
+      "issues": [
+        "No mobile viewport tag on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "72056419-edc0-4eed-bfb2-a506267e904e",
+    "name": "Mid South Vision Center",
+    "niche": "Optometrists",
+    "city": "Bartlett",
+    "state": "TN",
+    "website": "http://www.Midsouthvisioncenter.com/",
+    "phone": "9013734207",
+    "contactSource": "https://www.midsouthvisioncenter.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:46.976162+00:00",
+    "confidence": 0.9902,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://www.midsouthvisioncenter.com/",
+      "checkedAt": "2026-10-22T16:46:46.571Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "ee828d8f-161d-4981-ac6a-542c81a342b2",
+    "name": "Mid South Vision Center",
+    "niche": "Optometrists",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.midsouthvisioncenter.com/",
+    "phone": "9013243189",
+    "contactSource": "https://www.midsouthvisioncenter.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:46.827003+00:00",
+    "confidence": 0.9902,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://www.midsouthvisioncenter.com/",
+      "checkedAt": "2026-10-22T16:46:46.728Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "a4a4f687-2e56-43f3-9c8e-40c60f165fe3",
+    "name": "Momentum Physical Therapy",
+    "niche": "Physical therapy",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://momentumrehab.com/",
+    "phone": "9012573422",
+    "contactSource": "http://momentumrehab.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:46.252563+00:00",
+    "confidence": 1,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "http://momentumrehab.com/",
+      "checkedAt": "2026-10-22T16:46:47.387Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "39bc0d08-7d49-4360-ae1e-4faaddf14c23",
+    "name": "Southern Hand Center",
+    "niche": "Physical therapy",
+    "city": "Southaven",
+    "state": "MS",
+    "website": "http://southernhand.com",
+    "phone": "6625364695",
+    "contactSource": "https://southernhand.com/locations/",
+    "catalogCheckedAt": "2026-10-21T16:52:19.017787+00:00",
+    "confidence": 0.977,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://southernhand.com/",
+      "checkedAt": "2026-10-22T16:46:51.486Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "fb80898f-83d4-42d2-aa0e-9e45c0e9e6b1",
+    "name": "The Home Partners Realty",
+    "niche": "Real estate agents",
+    "city": "Cordova",
+    "state": "TN",
+    "website": "https://www.thehomepartnersrealty.com/",
+    "phone": "9013056047",
+    "contactSource": "https://www.thehomepartnersrealty.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:53.308431+00:00",
+    "confidence": 0.9722,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://www.thehomepartnersrealty.com/",
+      "checkedAt": "2026-10-22T16:46:51.389Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "d7857336-eaa2-4010-833f-16ad7079cfa1",
+    "name": "901 Wings",
+    "niche": "Restaurants",
+    "city": "Southaven",
+    "state": "MS",
+    "website": "http://Eatat901wings.com/",
+    "phone": "6623939016",
+    "contactSource": "https://www.eatat901wings.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:57.015069+00:00",
+    "confidence": 0.9902,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://www.eatat901wings.com/",
+      "checkedAt": "2026-10-22T16:46:59.775Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "d196c3a7-3a91-4d53-8f7b-b7dfc5da27d6",
+    "name": "Belly Acres Silo Square",
+    "niche": "Restaurants",
+    "city": "Southaven",
+    "state": "MS",
+    "website": "https://bellyacressilo.com/",
+    "phone": "6623622260",
+    "contactSource": "https://bellyacressilo.com/",
+    "catalogCheckedAt": "2026-10-21T16:50:21.443177+00:00",
+    "confidence": 0.9722,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://bellyacressilo.com/",
+      "checkedAt": "2026-10-22T16:46:57.918Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "a979af3b-5e55-4764-957f-9483ccd9460a",
+    "name": "Broadway Pizza East",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.broadwaypizzamemphis.com/",
+    "phone": "9012071546",
+    "contactSource": "http://www.broadwaypizzamemphis.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:58.092369+00:00",
+    "confidence": 0.9902,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "http://www.broadwaypizzamemphis.com/",
+      "checkedAt": "2026-10-22T16:46:52.145Z",
+      "issues": [
+        "No mobile viewport tag on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "78d3e732-9bfe-47c3-a299-f9272ef224d0",
+    "name": "Ching's Hot Wings",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://chingshotwings.blogspot.com/",
+    "phone": "9017435545",
+    "contactSource": "http://chingshotwings.blogspot.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:59.477485+00:00",
+    "confidence": 0.9902,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "http://chingshotwings.blogspot.com/",
+      "checkedAt": "2026-10-22T16:46:52.247Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "0f7895a5-0136-4505-94ef-1f74d3bce814",
+    "name": "Ciao Baby",
+    "niche": "Restaurants",
+    "city": "Collierville",
+    "state": "TN",
+    "website": "http://www.ciaobabypizza.com/",
+    "phone": "9014577457",
+    "contactSource": "http://www.ciaobabypizza.com/index.html",
+    "catalogCheckedAt": "2026-10-21T16:50:29.210242+00:00",
+    "confidence": 0.9524,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "http://www.ciaobabypizza.com/index.html",
+      "checkedAt": "2026-10-22T16:46:50.548Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "70045fe8-0742-4364-8e24-1c37e855c273",
+    "name": "City Silo Table + Pantry",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://www.thecitysilo.com",
+    "phone": "9017297687",
+    "contactSource": "https://www.thecitysilo.com",
+    "catalogCheckedAt": "2026-10-21T16:49:59.888438+00:00",
+    "confidence": 0.9902,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://www.thecitysilo.com/",
+      "checkedAt": "2026-10-22T16:46:52.399Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "ca8fcf51-9798-4927-a00b-826726c6d6f5",
+    "name": "Dino's Grill",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://dinosgrill.com/",
+    "phone": "9012789127",
+    "contactSource": "https://dinosgrill.com/",
+    "catalogCheckedAt": "2026-10-21T16:50:03.172633+00:00",
+    "confidence": 0.9902,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://dinosgrill.com/",
+      "checkedAt": "2026-10-22T16:46:55.405Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "cc0f7c4f-99a3-42d3-bcd3-cc3d1bf87132",
+    "name": "High Point Pizza",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.901highpointpizza.com/",
+    "phone": "9014523339",
+    "contactSource": "http://901highpointpizza.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:52.454980+00:00",
+    "confidence": 0.9965,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "http://901highpointpizza.com/",
+      "checkedAt": "2026-10-22T16:46:51.517Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "aa6338dd-793f-453e-a2e7-b97828214749",
+    "name": "Los Comales Mexican Bar & Grill",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://www.loscomalesmemphis.com/",
+    "phone": "9014408393",
+    "contactSource": "https://loscomalesmemphis.com/locations/",
+    "catalogCheckedAt": "2026-10-21T16:52:15.561848+00:00",
+    "confidence": 0.9928,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://loscomalesmemphis.com/",
+      "checkedAt": "2026-10-22T16:46:56.592Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "1b8b65a5-0d1f-47a3-b821-ea4052cc87aa",
+    "name": "Maciel's Tortas and Tacos",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://macielsmidtown.com",
+    "phone": "9014435346",
+    "contactSource": "https://macielsmidtown.com/contact/",
+    "catalogCheckedAt": "2026-10-21T16:52:23.840664+00:00",
+    "confidence": 0.9909,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://macielsmidtown.com/",
+      "checkedAt": "2026-10-22T16:46:53.679Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "a7f72162-97e1-4758-a4b3-48db8b535ea1",
+    "name": "Mrs. Hippie Eats",
+    "niche": "Restaurants",
+    "city": "Hernando",
+    "state": "MS",
+    "website": "http://Mrshippieeats.com/",
+    "phone": "6624699276",
+    "contactSource": "https://www.mrshippieeats.com/",
+    "catalogCheckedAt": "2026-10-21T16:50:13.493496+00:00",
+    "confidence": 0.9867,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://www.mrshippieeats.com/",
+      "checkedAt": "2026-10-22T16:46:51.158Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "05227386-3aea-44b1-ac86-83d57433e6e8",
+    "name": "Napa Cafe",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.napacafe.com/",
+    "phone": "9016830441",
+    "contactSource": "https://www.napacafe.com/",
+    "catalogCheckedAt": "2026-10-21T16:50:09.008766+00:00",
+    "confidence": 0.9902,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://www.napacafe.com/",
+      "checkedAt": "2026-10-22T16:46:56.036Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "46f259f8-aba3-4f98-99b4-a951e766e333",
+    "name": "OB Pizza Company",
+    "niche": "Restaurants",
+    "city": "Olive Branch",
+    "state": "MS",
+    "website": "http://ssburgers.com",
+    "phone": "6629322999",
+    "contactSource": "https://ssburgers.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:55.145670+00:00",
+    "confidence": 0.992,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://ssburgers.com/",
+      "checkedAt": "2026-10-22T16:46:57.062Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "2d2d2b94-b6d3-48eb-ade4-36a0fea4b5ae",
+    "name": "Shroomlicious Meals",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.shroomliciousmeals.com",
+    "phone": "9012058413",
+    "contactSource": "https://www.shroomliciousmeals.com/",
+    "catalogCheckedAt": "2026-10-21T16:50:32.272873+00:00",
+    "confidence": 0.95,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://www.shroomliciousmeals.com/",
+      "checkedAt": "2026-10-22T16:46:59.197Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "368dd0d8-5f1a-45d1-81e5-c41b31dabfd3",
+    "name": "SideStreet Burgers",
+    "niche": "Restaurants",
+    "city": "Olive Branch",
+    "state": "MS",
+    "website": "http://ssburgers.com/",
+    "phone": "9015964749",
+    "contactSource": "https://ssburgers.com/",
+    "catalogCheckedAt": "2026-10-21T16:50:14.877313+00:00",
+    "confidence": 0.9822,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://ssburgers.com/",
+      "checkedAt": "2026-10-22T16:46:57.150Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "8317406c-c8b8-446c-82e2-d28ca2f45d14",
+    "name": "Slice of Soul Pizza Lounge",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.sospizzalounge.com/",
+    "phone": "9015092087",
+    "contactSource": "https://haamacon.com/sospizzalounge/",
+    "catalogCheckedAt": "2026-10-21T16:50:15.331661+00:00",
+    "confidence": 0.9901,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://haamacon.com/sospizzalounge/",
+      "checkedAt": "2026-10-22T16:46:57.785Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "03bdb70a-97b5-4a02-873e-dff138cbd735",
+    "name": "The Blue Monkey",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://www.bluemonkeymemphis.com",
+    "phone": "9015276665",
+    "contactSource": "https://bluemonkeymemphis.com/contact.php",
+    "catalogCheckedAt": "2026-10-21T16:52:50.576771+00:00",
+    "confidence": 0.9722,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://bluemonkeymemphis.com/",
+      "checkedAt": "2026-10-22T16:46:55.732Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "1c9fedd0-d67c-478b-b1ef-5659b4c1c11f",
+    "name": "The Wing Guru",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.thewingguru.com/",
+    "phone": "9012094987",
+    "contactSource": "https://thewingguru.com/",
+    "catalogCheckedAt": "2026-10-21T16:50:24.402061+00:00",
+    "confidence": 0.9607,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://thewingguru.com/",
+      "checkedAt": "2026-10-22T16:46:56.772Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "cbde5c2d-77a9-4638-b351-8530ea0a7381",
+    "name": "Uncle Lou's Fried Chicken",
+    "niche": "Restaurants",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "https://www.unclelousfriedchicken.com/",
+    "phone": "9013322367",
+    "contactSource": "https://www.unclelousfriedchicken.com/",
+    "catalogCheckedAt": "2026-10-21T16:49:55.262337+00:00",
+    "confidence": 0.9912,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://www.unclelousfriedchicken.com/",
+      "checkedAt": "2026-10-22T16:46:51.649Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  },
+  {
+    "id": "a6206ca5-4221-4325-b5fb-c7e059731402",
+    "name": "Utopia Animal Hospital",
+    "niche": "Veterinarians",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "http://www.utopiaanimalhospital.com/",
+    "phone": "9017468758",
+    "contactSource": "https://utopiaanimalhospital.com/",
+    "catalogCheckedAt": "2026-10-21T16:50:49.179530+00:00",
+    "confidence": 0.9902,
+    "release": "2026-09-23.1",
+    "audit": {
+      "checkedUrl": "https://utopiaanimalhospital.com/",
+      "checkedAt": "2026-10-22T16:47:03.898Z",
+      "issues": [
+        "No search description on the checked page",
+        "No dedicated contact, booking or quote link found in fetched HTML"
+      ]
+    }
+  }
+]
